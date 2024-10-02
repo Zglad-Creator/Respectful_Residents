@@ -1,11 +1,12 @@
--- First, load Rayfield, the library to the gui
+
+-- First, load Rayfield
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
--- Create a Window in rayfield, using rayfield functions
+-- Create a Window
 local Window = Rayfield:CreateWindow({
     Name = "Radiant Residents: Zgladius",
-    LoadingTitle = "Radiant Residents: Zgladius",
-    LoadingSubtitle = "Free Edition 2024- for educational purposes on github",
+    LoadingTitle = "Zgladius",
+    LoadingSubtitle = "Please wait...",
     ConfigurationSaving = {
         Enabled = true,
         FolderName = "DefenseConfig",
@@ -29,11 +30,17 @@ Rayfield:Notify({
     }
 })
 
-
-
-
 -- Defense Tab
 local DefenseTab = Window:CreateTab("Defense Controls")
+
+DefenseTab:CreateButton({
+    Name = "Skip Cutscene",
+    Callback = function()
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SkippedCutscene"):FireServer()
+    end,
+})
+
+
 DefenseTab:CreateToggle({
     Name = "Auto Charge Bunker Defences",
     CurrentValue = false,
@@ -140,7 +147,7 @@ UtilityTab:CreateToggle({
     Callback = function(Value)
         while Value do
             game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SleepVote"):FireServer()
-            wait(240)
+            wait(240) -- Wait 4 minutes
         end
     end,
 })
@@ -163,24 +170,33 @@ SpecialControlsTab:CreateButton({
         
         game:GetService("ReplicatedStorage"):WaitForChild("StoryRandomEventsFolder"):WaitForChild("BBQ"):WaitForChild("Events"):WaitForChild("StartEnding"):FireServer(unpack(args))
     end,
-})
+})  -- This comma was missing
+
+-- Toggle for Auto Respawn
 SpecialControlsTab:CreateToggle({
     Name = "Auto Respawn",
     CurrentValue = false,
     Callback = function(Value)
         while Value do
             game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Respawn"):FireServer()
-            wait(300) 
+            wait(300) -- Wait 5 minutes (300 seconds)
         end
     end,
 })
+
+
+-- "Give Stuff" Tab
 local GiveStuffTab = Window:CreateTab("Give Stuff")
+
+-- Button for giving 200 of everything
 GiveStuffTab:CreateButton({
     Name = "Give 200 of everything",
     Callback = function()
         local replicatedStorage = game:GetService("ReplicatedStorage")
         local players = game:GetService("Players")
         local localPlayer = players.LocalPlayer
+        
+        -- Assuming this is the structure of your GUI and item IDs
         local gui = localPlayer.PlayerGui.BasementItemGUIs.Computer.Background.Market
         local productIDs = {
             Battery = gui.ProductIDs.Battery,
@@ -194,11 +210,15 @@ GiveStuffTab:CreateButton({
         }
         
         local event = replicatedStorage.Events.BoughtProductFromMarket
+        
+        -- Function to purchase a specific item 200 times
         local function purchaseItem(productID)
             for i = 1, 200 do
                 event:FireServer(productID)
             end
         end
+        
+        -- Trigger purchases for all items
         for itemName, id in pairs(productIDs) do
             purchaseItem(id)
         end
@@ -232,12 +252,21 @@ for _, itemName in ipairs(itemNames) do
         end,
     })
 end
+
+
+-- Special Controls Tab
 local SpecialControlsTab = Window:CreateTab("Special Controls")
+
+-- List of all weapons
 local weaponNames = {"Syringe", "Wrench", "PowerFist", "Crowbar", "SkeletonMace"}
+
+-- Function to acquire a weapon
 local function acquireWeapon(weaponName)
     local args = {[1] = weaponName}
     game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
 end
+
+-- Create a button for each weapon
 for _, weapon in ipairs(weaponNames) do
     SpecialControlsTab:CreateButton({
         Name = "Get " .. weapon,
@@ -246,6 +275,8 @@ for _, weapon in ipairs(weaponNames) do
         end,
     })
 end
+
+-- Create a button to give all weapons
 SpecialControlsTab:CreateButton({
     Name = "Give All Weapons",
     Callback = function()
@@ -254,7 +285,16 @@ SpecialControlsTab:CreateButton({
         end
     end,
 })
+-- New Items Control Tab
 local ItemsControlTab = Window:CreateTab("Items Control")
+
+
+
+
+
+
+
+-- Function to adjust item amounts
 local function adjustItemAmount(itemName, amount)
     local args = {
         [1] = "Pay Virus Requested Amount",
@@ -263,8 +303,12 @@ local function adjustItemAmount(itemName, amount)
     }
     game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
 end
+
+-- Iterate through each item in the folder
 for _, item in pairs(workspace.Basement.Important.Items:GetChildren()) do
-    local itemName = item.Name 
+    local itemName = item.Name -- Assume the item name is the folder's name
+
+    -- Create input for adding or removing items
     ItemsControlTab:CreateInput({
         Name = "Adjust " .. itemName,
         PlaceholderText = "Enter amount to add (positive) or remove (negative)",
@@ -272,49 +316,59 @@ for _, item in pairs(workspace.Basement.Important.Items:GetChildren()) do
         Callback = function(Text)
             local amount = tonumber(Text)
             if amount then
-                adjustItemAmount(itemName, -amount)
+                adjustItemAmount(itemName, -amount) -- Negative to add items due to script specifics
             end
         end,
     })
 
+    -- Create a button for quick adding of items
     ItemsControlTab:CreateButton({
         Name = "Add 300 " .. itemName,
         Callback = function()
-            adjustItemAmount(itemName, -300)
+            adjustItemAmount(itemName, -300) -- Adds 300 items
         end,
     })
+
+    -- Create a button for quick removal of items
     ItemsControlTab:CreateButton({
         Name = "Remove 300 " .. itemName,
         Callback = function()
-            adjustItemAmount(itemName, 300)
+            adjustItemAmount(itemName, 300) -- Removes 300 items
         end,
     })
 end
+
+
+
+-- Add button to give 999 of all items
 ItemsControlTab:CreateButton({
     Name = "Give 999 of All Items",
     Callback = function()
         for _, item in pairs(workspace.Basement.Important.Items:GetChildren()) do
-            local itemName = item.Name 
-            adjustItemAmount(itemName, -999) 
+            local itemName = item.Name -- Assumes item names are the folder's names
+            adjustItemAmount(itemName, -999) -- Adds 999 items since negative amounts are used to add items
         end
     end,
 })
 
+
+-- Function to remove exact amount of each item
 local function removeExactAmount(itemName, amount)
     local args = {
         [1] = "Pay Virus Requested Amount",
         [2] = itemName,
-        [3] = amount 
+        [3] = amount  -- Positive number to remove the exact amount held
     }
     game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
 end
 
+-- Create a button to remove all supplies based on the exact amounts taken
 ItemsControlTab:CreateButton({
     Name = "Remove Taken Supplies",
     Callback = function()
         for _, item in pairs(workspace.GameInfo.TakenItems:GetChildren()) do
-            local itemName = item.Name 
-            local currentAmount = item.Value 
+            local itemName = item.Name -- Assumes item names are the folder's names
+            local currentAmount = item.Value -- Assuming each child has a Value property with the number held
             if currentAmount > 0 then
                 removeExactAmount(itemName, currentAmount)
             end
@@ -323,15 +377,18 @@ ItemsControlTab:CreateButton({
 })
 
 
+-- Create a new tab called 'Extra'
 local ExtraTab = Window:CreateTab("Extra")
+
+-- Create a text input in the 'Extra' tab
 ExtraTab:CreateInput({
     Name = "Enter Value",
     PlaceholderText = "Type here and press enter...",
     RemoveTextAfterFocusLost = false,
     Callback = function(Text)
         local args = {
-            [1] = Text, 
-            [2] = Text   
+            [1] = Text,  -- First parameter from input
+            [2] = Text   -- Second parameter from input
         }
         game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
     end,
@@ -350,3 +407,40 @@ ExtraTab:CreateButton({
         end
     end,
 })
+
+-- 'Upgrade Weapons' tab
+local UpgradeWeaponsTab = Window:CreateTab("Upgrade Weapons")
+local weapons = game:GetService("ReplicatedStorage").Weapons.Tools:GetChildren()
+
+-- Function to upgrade a weapon
+local function upgradeWeapon(weaponName)
+    local args = {
+        [1] = "Upgrade Weapon: " .. weaponName,
+        [2] = weaponName
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
+end
+
+-- Create a Button for Each weapon
+for _, weapon in pairs(weapons) do
+    UpgradeWeaponsTab:CreateButton({
+        Name = "Upgrade " .. weapon.Name,
+        Callback = function()
+            upgradeWeapon(weapon.Name)
+        end,
+    })
+end
+
+-- Create a button to upgrade all weapons 8 times
+UpgradeWeaponsTab:CreateButton({
+    Name = "Upgrade All Weapons 8 Times",
+    Callback = function()
+        for _, weapon in pairs(weapons) do
+            for i = 1, 8 do
+                upgradeWeapon(weapon.Name)
+            end
+        end
+    end,
+})
+
+
