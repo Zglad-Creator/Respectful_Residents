@@ -2,7 +2,8 @@
 
 Welcome to **Respectful Residents**, an open-source project for a game developed by **R.O.E. Studios**. This repository contains the first-ever open-sourced script for a **Respectful Residents** game, featuring a **GUI** built using the **RF Library**. It's designed for public use and open to contributions from the community!
 
-![Respectful Residents Banner]([https://via.placeholder.com/800x300.png](https://avatars.githubusercontent.com/u/183560914?s=400&u=d442c46feb9cf20a1b0858238ef277b2d4c35936&v=4))
+![Respectful Residents Banner](https://avatars.githubusercontent.com/u/183560914?s=400&u=d442c46feb9cf20a1b0858238ef277b2d4c35936&v=4)
+
 
 ---
 
@@ -12,7 +13,6 @@ Welcome to **Respectful Residents**, an open-source project for a game developed
 - [How to Contribute](#how-to-contribute)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 
 ---
 
@@ -28,8 +28,6 @@ Welcome to **Respectful Residents**, an open-source project for a game developed
 - **Built with RF Library**: Leverages the power of the **RF Library** for smooth and interactive UI elements.
 - **Easy to Integrate**: Simple structure for developers to integrate the GUI into their own games.
 - **Active Community**: We welcome pull requests and collaboration from the community.
-
-![GUI Example](https://via.placeholder.com/600x400.png)  <!-- Replace with a real image of the GUI -->
 
 ---
 
@@ -53,8 +51,6 @@ We welcome contributions from developers of all levels! Here's how you can get s
     git push origin feature-branch
     ```
 5. Open a **Pull Request** to merge your changes back into the original repository.
-
-For more detailed instructions on contributing, check out our [Contributing Guide](CONTRIBUTING.md). (You can create this file with contribution guidelines.)
 
 ---
 
@@ -82,17 +78,4 @@ This repository contains a **GUI script** example for **Respectful Residents**, 
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-For questions or issues, feel free to open an issue on GitHub, or reach out via email at:  
-📧 roe.studios@example.com
-
----
-
-Thank you for checking out **Respectful Residents**! We hope you enjoy using and contributing to this project!
+Thank you for checking out **Respectful Residents**! We hope you enjoy using and contributing to this educational project!
