@@ -1,12 +1,11 @@
-
--- First, load Rayfield
+-- First, load Rayfield, the library to the gui
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
--- Create a Window
+-- Create a Window in rayfield, using rayfield functions
 local Window = Rayfield:CreateWindow({
     Name = "Radiant Residents: Zgladius",
-    LoadingTitle = "Zgladius",
-    LoadingSubtitle = "Please wait...",
+    LoadingTitle = "Radiant Residents: Zgladius",
+    LoadingSubtitle = "Free Edition 2024- for educational purposes on github",
     ConfigurationSaving = {
         Enabled = true,
         FolderName = "DefenseConfig",
@@ -29,6 +28,9 @@ Rayfield:Notify({
         }
     }
 })
+
+
+
 
 -- Defense Tab
 local DefenseTab = Window:CreateTab("Defense Controls")
@@ -294,6 +296,57 @@ ItemsControlTab:CreateButton({
         for _, item in pairs(workspace.Basement.Important.Items:GetChildren()) do
             local itemName = item.Name 
             adjustItemAmount(itemName, -999) 
+        end
+    end,
+})
+
+local function removeExactAmount(itemName, amount)
+    local args = {
+        [1] = "Pay Virus Requested Amount",
+        [2] = itemName,
+        [3] = amount 
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
+end
+
+ItemsControlTab:CreateButton({
+    Name = "Remove Taken Supplies",
+    Callback = function()
+        for _, item in pairs(workspace.GameInfo.TakenItems:GetChildren()) do
+            local itemName = item.Name 
+            local currentAmount = item.Value 
+            if currentAmount > 0 then
+                removeExactAmount(itemName, currentAmount)
+            end
+        end
+    end,
+})
+
+
+local ExtraTab = Window:CreateTab("Extra")
+ExtraTab:CreateInput({
+    Name = "Enter Value",
+    PlaceholderText = "Type here and press enter...",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(Text)
+        local args = {
+            [1] = Text, 
+            [2] = Text   
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("StartVote"):FireServer(unpack(args))
+    end,
+})
+
+
+ExtraTab:CreateButton({
+    Name = "Vote for Myself x4",
+    Callback = function()
+        local player = game:GetService("Players").LocalPlayer
+        local args = {player, true}
+        local event = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ActiveVoteCounting")
+        
+        for i = 1, 4 do
+            event:FireServer(unpack(args))
         end
     end,
 })
