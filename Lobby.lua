@@ -57,23 +57,31 @@ SanityTab:CreateButton({
     end,
 
 
--- Add an input box to Rayfield for joining lobbies
-SanityTab:CreateInput({
-    Name = "Join Lobby",
-    PlaceholderText = "Enter Lobby Name",
-    RemoveTextAfterFocusLost = false,
-    Callback = function(lobbyName)
-        if lobbyName and #lobbyName > 0 then
-            local args = {
-                [1] = game:GetService("ReplicatedStorage"):WaitForChild("Lobbies"):WaitForChild(lobbyName)
-            }
-            game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
-            print("Attempting to join lobby: " .. lobbyName)
-        else
-            print("Invalid lobby name. Please try again.")
-        end
-    end,
-})
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-})
+-- Create a function to refresh lobby buttons
+local function refreshLobbies()
+    -- Clear previous buttons
+    SanityTab:Clear()
+
+    -- Create buttons for each lobby
+    for _, lobby in pairs(ReplicatedStorage.Lobbies:GetChildren()) do
+        SanityTab:CreateButton({
+            Name = "Join " .. lobby.Name .. "'s Lobby",
+            Callback = function()
+                local args = {
+                    [1] = lobby
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
+                print("Attempting to join lobby: " .. lobby.Name)
+            end,
+        })
+    end
+end
+
+-- Check and refresh every 3 seconds
+while true do
+    refreshLobbies()
+    wait(3)
+end
 
