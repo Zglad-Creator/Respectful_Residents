@@ -56,24 +56,4 @@ SanityTab:CreateButton({
         end
     end,
 
--- Add an input box to the SanityTab to enter the lobby player's name
-SanityTab:CreateInput({
-    Name = "Enter Lobby Name",
-    PlaceholderText = "Enter player lobby name",
-    RemoveTextAfterFocusLost = false,
-    Callback = function(lobbyName)
-        if lobbyName and #lobbyName > 0 then
-            -- Start looping and trying to join the lobby every 0.01 seconds
-            while true do
-                local args = {
-                    [1] = game:GetService("ReplicatedStorage"):WaitForChild("Lobbies"):WaitForChild(lobbyName)
-                }
-                game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
-                wait(0.01)  -- Attempt to join the lobby every 0.01 seconds
-            end
-        else
-            print("Invalid lobby name.")
-        end
-    end,
-})
 
