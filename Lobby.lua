@@ -57,6 +57,7 @@ SanityTab:CreateButton({
     end,
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
 
 -- Create a function to refresh lobby buttons
 local function refreshLobbies()
@@ -65,16 +66,30 @@ local function refreshLobbies()
 
     -- Create buttons for each lobby
     for _, lobby in pairs(ReplicatedStorage.Lobbies:GetChildren()) do
-        SanityTab:CreateButton({
-            Name = "Join " .. lobby.Name .. "'s Lobby",
-            Callback = function()
-                local args = {
-                    [1] = lobby
-                }
-                game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
-                print("Attempting to join lobby: " .. lobby.Name)
-            end,
-        })
+        -- Get the player's UserId (assuming the child name is their UserId)
+        local userId = tonumber(lobby.Name)
+        if userId then
+            -- Get the player's username from UserId
+            local success, playerName = pcall(function()
+                return Players:GetNameFromUserIdAsync(userId)
+            end)
+
+            -- Check if successful
+            if success then
+                SanityTab:CreateButton({
+                    Name = "Join " .. playerName .. "'s Lobby",
+                    Callback = function()
+                        local args = {
+                            [1] = lobby
+                        }
+                        game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
+                        print("Attempting to join lobby: " .. playerName)
+                    end,
+                })
+            else
+                print("Failed to get username for UserId: " .. lobby.Name)
+            end
+        end
     end
 end
 
