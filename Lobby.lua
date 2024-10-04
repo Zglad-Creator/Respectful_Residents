@@ -55,5 +55,6 @@ SanityTab:CreateButton({
             print("Purchased bunker: " .. bunker .. " for 0 Sanity Points.")
         end
     end,
+})
 
 
