@@ -66,16 +66,15 @@ local function refreshLobbies()
 
     -- Create buttons for each lobby
     for _, lobby in pairs(ReplicatedStorage.Lobbies:GetChildren()) do
-        -- Get the player's UserId (assuming the child name is their UserId)
+        -- If the name of the child is actually a UserId (as a number)
         local userId = tonumber(lobby.Name)
         if userId then
-            -- Get the player's username from UserId
+            -- Attempt to get the username from the UserId
             local success, playerName = pcall(function()
                 return Players:GetNameFromUserIdAsync(userId)
             end)
 
-            -- Check if successful
-            if success then
+            if success and playerName then
                 SanityTab:CreateButton({
                     Name = "Join " .. playerName .. "'s Lobby",
                     Callback = function()
@@ -87,8 +86,10 @@ local function refreshLobbies()
                     end,
                 })
             else
-                print("Failed to get username for UserId: " .. lobby.Name)
+                print("Error fetching username for UserId:", userId)
             end
+        else
+            print("Lobby name is not a valid UserId: " .. lobby.Name)
         end
     end
 end
