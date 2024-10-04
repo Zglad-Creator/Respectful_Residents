@@ -56,47 +56,24 @@ SanityTab:CreateButton({
         end
     end,
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Players = game:GetService("Players")
-
--- Create a function to refresh lobby buttons
-local function refreshLobbies()
-    -- Clear previous buttons
-    SanityTab:Clear()
-
-    -- Create buttons for each lobby
-    for _, lobby in pairs(ReplicatedStorage.Lobbies:GetChildren()) do
-        -- If the name of the child is actually a UserId (as a number)
-        local userId = tonumber(lobby.Name)
-        if userId then
-            -- Attempt to get the username from the UserId
-            local success, playerName = pcall(function()
-                return Players:GetNameFromUserIdAsync(userId)
-            end)
-
-            if success and playerName then
-                SanityTab:CreateButton({
-                    Name = "Join " .. playerName .. "'s Lobby",
-                    Callback = function()
-                        local args = {
-                            [1] = lobby
-                        }
-                        game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
-                        print("Attempting to join lobby: " .. playerName)
-                    end,
-                })
-            else
-                print("Error fetching username for UserId:", userId)
+-- Add an input box to the SanityTab to enter the lobby player's name
+SanityTab:CreateInput({
+    Name = "Enter Lobby Name",
+    PlaceholderText = "Enter player lobby name",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(lobbyName)
+        if lobbyName and #lobbyName > 0 then
+            -- Start looping and trying to join the lobby every 0.01 seconds
+            while true do
+                local args = {
+                    [1] = game:GetService("ReplicatedStorage"):WaitForChild("Lobbies"):WaitForChild(lobbyName)
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
+                wait(0.01)  -- Attempt to join the lobby every 0.01 seconds
             end
         else
-            print("Lobby name is not a valid UserId: " .. lobby.Name)
+            print("Invalid lobby name.")
         end
-    end
-end
-
--- Check and refresh every 3 seconds
-while true do
-    refreshLobbies()
-    wait(3)
-end
+    end,
+})
 
