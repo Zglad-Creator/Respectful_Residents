@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Create a Window
 local Window = Rayfield:CreateWindow({
-    Name = "Sanity Manager by Zgladius",
-    LoadingTitle = "Loading Sanity Manager by Zgladius...",
+    Name = "Lobby by Zgladius",
+    LoadingTitle = "Loading Lobby Gui by Zgladius...",
     ConfigurationSaving = {
         Enabled = true,
         FolderName = "SanityConfig",
@@ -55,5 +55,25 @@ SanityTab:CreateButton({
             print("Purchased bunker: " .. bunker .. " for 0 Sanity Points.")
         end
     end,
+
+
+-- Add an input box to Rayfield for joining lobbies
+SanityTab:CreateInput({
+    Name = "Join Lobby",
+    PlaceholderText = "Enter Lobby Name",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(lobbyName)
+        if lobbyName and #lobbyName > 0 then
+            local args = {
+                [1] = game:GetService("ReplicatedStorage"):WaitForChild("Lobbies"):WaitForChild(lobbyName)
+            }
+            game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(unpack(args))
+            print("Attempting to join lobby: " .. lobbyName)
+        else
+            print("Invalid lobby name. Please try again.")
+        end
+    end,
+})
+
 })
 
