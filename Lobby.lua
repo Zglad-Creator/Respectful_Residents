@@ -56,7 +56,6 @@ SanityTab:CreateButton({
         end
     end,
 
-
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- Create a function to refresh lobby buttons
