@@ -64,7 +64,8 @@ SanityTab:CreateInput({
     Name = "Enter Lobby Name",
     PlaceholderText = "Enter player lobby name",
     RemoveTextAfterFocusLost = false,
-    Callback = function(lobbyName)
+    Callback = function(Text)
+        local lobbyName = tostring(Text)
         if lobbyName and #lobbyName > 0 then
             -- Start looping and trying to join the lobby every 0.01 seconds
             spawn(function()
@@ -87,5 +88,6 @@ SanityTab:CreateInput({
         end
     end,
 })
+
 
 
