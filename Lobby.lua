@@ -57,6 +57,25 @@ SanityTab:CreateButton({
     end,
 })
 
+SanityTab:CreateButton({
+    Name = "Delete Duplicate Bunker Themes",
+    Callback = function()
+        local bunkerThemes = game:GetService("Players").LocalPlayer:WaitForChild("BunkerThemes"):GetChildren()
+        local seenThemes = {}
+
+        for _, theme in pairs(bunkerThemes) do
+            if not seenThemes[theme.Name] then
+                seenThemes[theme.Name] = true  -- Mark theme as seen
+            else
+                theme:Destroy()  -- Destroy duplicate theme
+                print("Deleted duplicate theme: " .. theme.Name)
+            end
+        end
+
+        print("Completed deletion of duplicate bunker themes.")
+    end,
+})
+
 
 
 
