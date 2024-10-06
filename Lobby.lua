@@ -89,8 +89,7 @@ SanityTab:CreateButton({
         -- Start adding 7 sanity every 0.00001 seconds
         spawn(function()
             while true do
-                game:GetService("ReplicatedStorage").BuyTheme:InvokeServer(-7, "Luxury")
-                wait(0.00001)  -- Add 7 sanity every 0.00001 seconds
+                game:GetService("ReplicatedStorage").BuyTheme:InvokeServer(-957, "Luxury")
             end
         end)
     end,
