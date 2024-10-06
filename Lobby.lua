@@ -77,6 +77,26 @@ SanityTab:CreateButton({
 })
 
 
+-- Button to first clear sanity to zero, then add 7 sanity every 0.00001 seconds
+SanityTab:CreateButton({
+    Name = "Reset Sanity and Add 7 Every 0.00001 Seconds",
+    Callback = function()
+        -- Remove all sanity points
+        local sanityPoints = game:GetService("Players").LocalPlayer.leaderstats["Sanity Points"].Value
+        game:GetService("ReplicatedStorage").BuyTheme:InvokeServer(sanityPoints, "Luxury")
+        print("Removed " .. sanityPoints .. " Sanity Points.")
+
+        -- Start adding 7 sanity every 0.00001 seconds
+        spawn(function()
+            while true do
+                game:GetService("ReplicatedStorage").BuyTheme:InvokeServer(-7, "Luxury")
+                wait(0.00001)  -- Add 7 sanity every 0.00001 seconds
+            end
+        end)
+    end,
+})
+
+
 
 
 
