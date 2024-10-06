@@ -1,8 +1,8 @@
 local placeId = game.PlaceId
 if placeId == 14702923685 or placeId == 16335600896 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Respectful_Residents/refs/heads/main/Main.lua"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/pnFuZwxk"))()
 elseif placeId == 13950108612 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Respectful_Residents/refs/heads/main/Lobby.lua"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/f8VjcU59"))()
 else
     print("Not Supported :(")
 end
