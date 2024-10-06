@@ -40,7 +40,7 @@ SanityTab:CreateButton({
 
 --bunker list
 local bunkers = {
-    "Aquarium", "Artificial Happiness", "Asylum", "BBQ", "Birthday Party", 
+    "Aquarium", "Artificial Happiness","Alien", "Asylum", "BBQ", "Birthday Party", 
     "Christmas", "Cozy Cabin", "Dollhouse", "Fallout", "Halloween", 
     "Japan", "Lab", "Luxury", "Overgrown", "Raiders", 
     "Realistic Basement", "Space", "Survivor", "Void"
