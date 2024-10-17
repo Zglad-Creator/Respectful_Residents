@@ -10,8 +10,11 @@ while dog:
       print("Great! Let's keep going!")  # Keep looping if the user says "yes"
   else:
       print("Please enter a valid response (y/n)")  # Prompt again if the input is invalid
-    
 
-      print("Great! Let's keep going!")  # Keep looping if the user says "yes"
-  else:
-      print("Please enter a valid response (y/n)")  # Prompt again if the input is invalid
+
+print("random number guesser")
+import random
+number = random.randint(1, 20)
+guess = 0
+while guess != random:
+  guess = input("guess a number from 1 to 20: ")
