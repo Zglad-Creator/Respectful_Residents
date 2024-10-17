@@ -11,13 +11,7 @@ while dog:
   else:
       print("Please enter a valid response (y/n)")  # Prompt again if the input is invalid
     
-  user_input2 = input("Do you still like dogs? y/n ").lower()
-  if user_input == "n" or user_input == "no": # Program exits the loop if the user enters either "no" or "n"
-    print("how dare you!")
-    last_chance = input("Do you still like dogs? y/n ").lower()
-    if user_input == "n" or user_input == "no": # Program exits the loop if the user enters either "no" or "n"
-      dog = False # Ends the loop if the answer is no
-  elif user_input == "y" or user_input == "yes":
+
       print("Great! Let's keep going!")  # Keep looping if the user says "yes"
   else:
       print("Please enter a valid response (y/n)")  # Prompt again if the input is invalid
