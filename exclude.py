@@ -19,6 +19,7 @@ guess = 0
 while guess != random:
   guess = input("guess a number from 1 to 20: ")
 
+
 print("heads or tails")
 new_number = input("Do you think it is heads or tails, (1 is tails, 2 is heads)")
 if new_number == 1:
