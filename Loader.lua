@@ -1,5 +1,5 @@
 local placeId = game.PlaceId
-if placeId == 14702923685 or placeId == 16335600896 then
+if placeId == 14702923685 or placeId == 16335600896 or placeId ==16335600116 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Respectful_Residents/refs/heads/main/Main.lua"))()
 elseif placeId == 13950108612 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Respectful_Residents/refs/heads/main/Lobby.lua"))()
@@ -19,4 +19,3 @@ while true do
     end
     wait(0.1)
 end
-
