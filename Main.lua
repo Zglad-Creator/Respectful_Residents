@@ -444,3 +444,22 @@ UpgradeWeaponsTab:CreateButton({
 })
 
 
+local ExtraTab = Window:CreateTab("Extra")
+
+-- Create a dropdown for choosing tea type
+ExtraTab:CreateDropdown({
+    Name = "Choose Tea",
+    Options = {"Cleansing Tea", "Refreshing Tea", "Healing Tea"},
+    CurrentOption = "Cleansing Tea",
+    MultipleOptions = false,
+    Flag = "TeaDropdown",
+    Callback = function(Option)
+        -- Purchase the selected tea
+        local args = {
+            [1] = Option
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tea"):WaitForChild("PurchasingTea"):FireServer(unpack(args))
+    end,
+})
+
+
