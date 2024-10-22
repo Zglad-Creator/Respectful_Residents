@@ -8,3 +8,4 @@ while dog:
     print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
     dog = False # Ends the loop if the answer is no
   print("bon is funny")
+  print("clutch!!")
