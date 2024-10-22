@@ -9,3 +9,6 @@ while dog:
     dog = False # Ends the loop if the answer is no
   print("bon is funny")
   print("clutch!!")
+ while cat:
+   print("flag false")
+  
