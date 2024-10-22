@@ -444,3 +444,36 @@ UpgradeWeaponsTab:CreateButton({
 })
 
 
+
+-- Button to purchase Cleansing Tea
+ExtraTab:CreateButton({
+    Name = "Buy Cleansing Tea",
+    Callback = function()
+        local args = {
+            [1] = "Cleansing Tea"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tea"):WaitForChild("PurchasingTea"):FireServer(unpack(args))
+    end,
+})
+
+-- Button to purchase Refreshing Tea
+ExtraTab:CreateButton({
+    Name = "Buy Refreshing Tea",
+    Callback = function()
+        local args = {
+            [1] = "Refreshing Tea"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tea"):WaitForChild("PurchasingTea"):FireServer(unpack(args))
+    end,
+})
+
+-- Button to purchase Healing Tea
+ExtraTab:CreateButton({
+    Name = "Buy Healing Tea",
+    Callback = function()
+        local args = {
+            [1] = "Healing Tea"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tea"):WaitForChild("PurchasingTea"):FireServer(unpack(args))
+    end,
+})
