@@ -11,4 +11,6 @@ while dog:
   print("clutch!!")
  while cat:
    print("flag false")
+if roblox=100000
+  print("power on")
   
