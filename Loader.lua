@@ -10,12 +10,12 @@ while true do
     local screenGui = game:GetService("CoreGui"):FindFirstChild("ScreenGui")
     if screenGui then
         screenGui:Destroy()
-        print("lol")
+        warn("Client Tampering Detected - Your attempt has been Logged")
     end
     local turtleSpyGui = game:GetService("CoreGui"):FindFirstChild("TurtleSpyGUI")
     if turtleSpyGui then
         turtleSpyGui:Destroy()
-        print("lol")
+        warn("Client Tampering Detected - Your attempt has been Logged")
     end
     wait(0.1)
 end
