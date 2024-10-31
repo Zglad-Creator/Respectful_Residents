@@ -1,6 +1,6 @@
 # Respectful Residents
 
-Welcome to **Respectful Residents**, an open-source project for a game developed by **R.O.E. Studios**. This repository contains the first-ever open-sourced script for a **Respectful Residents** game, featuring a **GUI** built using the **RF Library**. It's designed for public use and open to contributions from the community!
+Welcome to **Respectful Residents**, an open-source project for a game developed by **R.O.E. Studios**. This repository contains the first-EVER open-sourced script for the **Respectful Residents** game, and for the ROE studies in general. Featuring a **GUI** built using the **RF Library**. It's designed for public use and open to contributions from the community!
 
 ![Respectful Residents Banner](https://avatars.githubusercontent.com/u/183560914?s=400&u=d442c46feb9cf20a1b0858238ef277b2d4c35936&v=4)
 
