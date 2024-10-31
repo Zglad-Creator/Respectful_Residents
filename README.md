@@ -1,4 +1,4 @@
-# Respectful Residents
+# Respectful Residents -Zglad Hub
 
 Welcome to **Respectful Residents**, an open-source project for a game developed by **R.O.E. Studios**. This repository contains the first-EVER open-sourced script for the **Respectful Residents** game, and for the ROE studies in general. Featuring a **GUI** built using the **RF Library**. It's designed for public use and open to contributions from the community!
 
