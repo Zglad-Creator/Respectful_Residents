@@ -10,16 +10,27 @@ while dog:
     user_input = input("Do you still like roblox? y/n ").lower()
     if user_input == "n" or user_input == "no":
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
-        dog = False
-    
+        dog = False  # Ends the loop if the answer is no
+
     print("bon is funny")
     print("clutch!!")
     print("random chaos incoming...")
     like_count += 1
-    print(f"like_count is now {like_count}")
+
+    # 7 NEW lines of actual code (logic-based, not just print)
+    import random
+    random_value = random.randint(1, 100)
+    if random_value % 2 == 0:
+        print("Even chaos level detected:", random_value)
+    else:
+        print("Odd chaos level detected:", random_value)
+    chaos_multiplier = like_count * random_value
+    print("Chaos multiplier is:", chaos_multiplier)
+
+    print("like_count is now", like_count)
     print("snakes everywhere")
     print("launching into orbit")
-    
+
     print("Warning: unknown variable detected")
     print("System malfunction in progress")
     print("Turning off lights... maybe")
@@ -27,7 +38,7 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
-
+    
     print("Activating stealth mode")
     print("Unexpected dance break")
     print("Check inventory: empty")
@@ -52,6 +63,7 @@ while dog:
     print("Computing random nonsense")
     print("Spaghetti code detected")
 
+    # 7 MORE random lines added
     print("Teleporting to the fridge")
     print("Counting invisible beans")
     print("Dancing with shadows")
@@ -60,14 +72,14 @@ while dog:
     print("Random beep sounds")
     print("Generating chaos numbers")
 
-    # 7 NEW LINES - UNIQUE TO CODE 5
-    print("Launching balloon-powered server")
-    print("Brewing code in a teapot")
-    print("Simulating sock universe")
-    print("Unzipping parallel timelines")
-    print("Hacking reality with a smile")
-    print("Feeding cookies to the firewall")
-    print("Poking black holes with a stick")
+    # 7 NEW random lines added below
+    print("Uploading dreams to the cloud")
+    print("Charging emotional batteries")
+    print("Compiling laughter.exe")
+    print("Decrypting banana protocols")
+    print("Rendering pixelated universes")
+    print("Synchronizing with parallel timelines")
+    print("Executing undefined behavior")
 
     while cat:
         print("flag false")
@@ -82,3 +94,4 @@ else:
     print("power off")
 
 print("The end? Or just the beginning...")
+
