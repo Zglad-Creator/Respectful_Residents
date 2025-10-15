@@ -26,6 +26,31 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
+    
+    print("Activating stealth mode")
+    print("Unexpected dance break")
+    print("Check inventory: empty")
+    print("Simulation of chaos continues")
+    print("Power fluctuating")
+    print("Debugging nothing at all")
+    print("This line is definitely random")
+    
+    print("Calculating imaginary numbers")
+    print("Launching invisible rockets")
+    print("Reading thoughts of the dog")
+    print("Time is just a concept")
+    print("Aliens are probably laughing")
+    print("Rewriting the rules")
+    print("Confusion level: maximum")
+    
+    # 7 MORE new random lines
+    print("Summoning invisible sandwiches")
+    print("Running in reverse")
+    print("Error: coffee not found")
+    print("Unlocking secret achievements")
+    print("Gravity is optional")
+    print("Computing random nonsense")
+    print("Spaghetti code detected")
 
     while cat:
         print("flag false")
