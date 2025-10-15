@@ -477,3 +477,13 @@ ExtraTab:CreateButton({
         game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tea"):WaitForChild("PurchasingTea"):FireServer(unpack(args))
     end,
 })
+local QuickTab = Window:CreateTab("Quick Commands")
+
+QuickTab:CreateButton({
+    Name = "Refill All Stats",
+    Callback = function()
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ChangingPlayerHealth"):FireServer(-1000, true)
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ChangingHunger"):FireServer(-100)
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ChangingThirst"):FireServer(-100)
+    end,
+})
