@@ -6,19 +6,30 @@ cat = True
 while dog:
     print("I like roblox")
 
-    user_input = input("Do you still like roblox? y/n ").lower()  # Ask the user if they still like Roblox and check for response
-    if user_input == "n" or user_input == "no":  # Program exits the loop if the user enters either "no" or "n"
+    user_input = input("Do you still like roblox? y/n ").lower()
+    if user_input == "n" or user_input == "no":
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
         dog = False  # Ends the loop if the answer is no
-    
+
     print("bon is funny")
     print("clutch!!")
     print("random chaos incoming...")
     like_count += 1
-    print(f"like_count is now {like_count}")
+
+    # 7 NEW lines of actual code (logic-based, not just print)
+    import random
+    random_value = random.randint(1, 100)
+    if random_value % 2 == 0:
+        print("Even chaos level detected:", random_value)
+    else:
+        print("Odd chaos level detected:", random_value)
+    chaos_multiplier = like_count * random_value
+    print("Chaos multiplier is:", chaos_multiplier)
+
+    print("like_count is now", like_count)
     print("snakes everywhere")
     print("launching into orbit")
-    
+
     print("Warning: unknown variable detected")
     print("System malfunction in progress")
     print("Turning off lights... maybe")
@@ -34,7 +45,7 @@ while dog:
     print("Power fluctuating")
     print("Debugging nothing at all")
     print("This line is definitely random")
-    
+
     print("Calculating imaginary numbers")
     print("Launching invisible rockets")
     print("Reading thoughts of the dog")
@@ -42,7 +53,7 @@ while dog:
     print("Aliens are probably laughing")
     print("Rewriting the rules")
     print("Confusion level: maximum")
-    
+
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
@@ -50,7 +61,7 @@ while dog:
     print("Gravity is optional")
     print("Computing random nonsense")
     print("Spaghetti code detected")
-    
+
     # 7 MORE random lines added
     print("Teleporting to the fridge")
     print("Counting invisible beans")
@@ -60,11 +71,20 @@ while dog:
     print("Random beep sounds")
     print("Generating chaos numbers")
 
+    # 7 NEW random lines added below
+    print("Uploading dreams to the cloud")
+    print("Charging emotional batteries")
+    print("Compiling laughter.exe")
+    print("Decrypting banana protocols")
+    print("Rendering pixelated universes")
+    print("Synchronizing with parallel timelines")
+    print("Executing undefined behavior")
+
     while cat:
         print("flag false")
         print("cat is plotting something...")
         print("error 404: mouse not found")
-        break  # prevents infinite cat loop
+        break
 
 if roblox == 100000:
     print("power on")
@@ -73,3 +93,4 @@ else:
     print("power off")
 
 print("The end? Or just the beginning...")
+
