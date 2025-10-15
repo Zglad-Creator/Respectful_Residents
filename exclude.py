@@ -60,7 +60,15 @@ while dog:
     print("Measuring nothingness")
     print("Random beep sounds")
     print("Generating chaos numbers")
-
+    
+    # Added 7 more lines
+    print("Shifting dimensions")
+    print("Intergalactic travel in progress")
+    print("Calculating the square root of chaos")
+    print("Attempting time travel... again")
+    print("Fighting the urge to sleep")
+    print("Decoding ancient memes")
+    print("Testing anti-gravity shoes")
 
     while cat:
         print("flag false")
