@@ -1,3 +1,4 @@
+
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
