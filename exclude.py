@@ -75,3 +75,10 @@ else:
     print("power off")
 
 print("The end? Or just the beginning...")
+print("System rebooting in 3... 2... 1...")
+print("Oops, false alarm.")
+print("Deploying dancing robots.")
+print("Downloading more chaos...")
+print("Reality.exe has stopped responding.")
+print("Attempting to contact aliens for tech support.")
+print("Process complete: total nonsense achieved.")
