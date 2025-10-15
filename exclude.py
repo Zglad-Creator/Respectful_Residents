@@ -18,6 +18,14 @@ while dog:
     print(f"like_count is now {like_count}")
     print("snakes everywhere")
     print("launching into orbit")
+    
+    print("Warning: unknown variable detected")
+    print("System malfunction in progress")
+    print("Turning off lights... maybe")
+    print("Rebooting imagination module")
+    print("Error: too much fun")
+    print("Spinning in circles...")
+    print("Inserting random numbers:", like_count * 7)
 
     while cat:
         print("flag false")
