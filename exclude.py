@@ -92,5 +92,14 @@ if roblox == 100000:
 else:
     print("power off")
 
+# 7 final new lines added here
+print("Recalculating purpose of toasters")
+print("Engaging interdimensional elevator")
+print("Compiling jokes database...")
+print("Silence detected... adding more noise")
+print("Taming digital unicorns")
+print("Watering virtual plants")
+print("Initiating dramatic pause")
+
 print("The end? Or just the beginning...")
 
