@@ -1,3 +1,4 @@
+
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -6,10 +7,10 @@ cat = True
 while dog:
     print("I like roblox")
 
-    user_input = input("Do you still like roblox? y/n ").lower()  # Ask the user if they still like Roblox and check for response
-    if user_input == "n" or user_input == "no":  # Program exits the loop if the user enters either "no" or "n"
+    user_input = input("Do you still like roblox? y/n ").lower()
+    if user_input == "n" or user_input == "no":
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
-        dog = False  # Ends the loop if the answer is no
+        dog = False
     
     print("bon is funny")
     print("clutch!!")
@@ -26,7 +27,6 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
-    
 
     print("Activating stealth mode")
     print("Unexpected dance break")
@@ -35,7 +35,7 @@ while dog:
     print("Power fluctuating")
     print("Debugging nothing at all")
     print("This line is definitely random")
-    
+
     print("Calculating imaginary numbers")
     print("Launching invisible rockets")
     print("Reading thoughts of the dog")
@@ -43,7 +43,7 @@ while dog:
     print("Aliens are probably laughing")
     print("Rewriting the rules")
     print("Confusion level: maximum")
-    
+
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
@@ -51,8 +51,7 @@ while dog:
     print("Gravity is optional")
     print("Computing random nonsense")
     print("Spaghetti code detected")
-    
-    # 7 MORE random lines added
+
     print("Teleporting to the fridge")
     print("Counting invisible beans")
     print("Dancing with shadows")
@@ -61,12 +60,20 @@ while dog:
     print("Random beep sounds")
     print("Generating chaos numbers")
 
+    # 7 NEW LINES - UNIQUE TO CODE 5
+    print("Launching balloon-powered server")
+    print("Brewing code in a teapot")
+    print("Simulating sock universe")
+    print("Unzipping parallel timelines")
+    print("Hacking reality with a smile")
+    print("Feeding cookies to the firewall")
+    print("Poking black holes with a stick")
 
     while cat:
         print("flag false")
         print("cat is plotting something...")
         print("error 404: mouse not found")
-        break  # prevents infinite cat loop
+        break
 
 if roblox == 100000:
     print("power on")
