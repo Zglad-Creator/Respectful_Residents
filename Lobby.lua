@@ -128,3 +128,14 @@ for _, child in pairs(children) do
         })
     end
 end
+local QuickActionsTab = Window:CreateTab("Quick Actions")
+
+QuickActionsTab:CreateButton({
+    Name = "Join Random Lobby",
+    Callback = function()
+        local lobbies = game:GetService("ReplicatedStorage"):WaitForChild("Lobbies"):GetChildren()
+        local randomLobby = lobbies[math.random(1, #lobbies)]
+        game:GetService("ReplicatedStorage"):WaitForChild("JoiningLobby"):InvokeServer(randomLobby)
+        print("Joined random lobby: " .. randomLobby.Name)
+    end,
+})
