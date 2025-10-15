@@ -10,7 +10,7 @@ while dog:
     if user_input == "n" or user_input == "no":  # Program exits the loop if the user enters either "no" or "n"
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
         dog = False  # Ends the loop if the answer is no
-    
+
     print("bon is funny")
     print("clutch!!")
     print("random chaos incoming...")
@@ -27,7 +27,6 @@ while dog:
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
     
-
     print("Activating stealth mode")
     print("Unexpected dance break")
     print("Check inventory: empty")
@@ -81,5 +80,14 @@ if roblox == 100000:
     print("do not unplug the mainframe!")
 else:
     print("power off")
+
+# 7 final new lines added here
+print("Recalculating purpose of toasters")
+print("Engaging interdimensional elevator")
+print("Compiling jokes database...")
+print("Silence detected... adding more noise")
+print("Taming digital unicorns")
+print("Watering virtual plants")
+print("Initiating dramatic pause")
 
 print("The end? Or just the beginning...")
