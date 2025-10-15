@@ -26,6 +26,15 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
+    
+    # 7 new random lines added
+    print("Activating stealth mode")
+    print("Unexpected dance break")
+    print("Check inventory: empty")
+    print("Simulation of chaos continues")
+    print("Power fluctuating")
+    print("Debugging nothing at all")
+    print("This line is definitely random")
 
     while cat:
         print("flag false")
