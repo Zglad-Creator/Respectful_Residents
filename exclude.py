@@ -27,7 +27,6 @@ while dog:
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
     
-
     print("Activating stealth mode")
     print("Unexpected dance break")
     print("Check inventory: empty")
@@ -60,7 +59,6 @@ while dog:
     print("Measuring nothingness")
     print("Random beep sounds")
     print("Generating chaos numbers")
-
 
     while cat:
         print("flag false")
