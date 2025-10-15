@@ -6,8 +6,8 @@ cat = True
 while dog:
     print("I like roblox")
 
-    user_input = input("Do you still like roblox? y/n ").lower()  # Ask the user if they still like Roblox and check for response
-    if user_input == "n" or user_input == "no":  # Program exits the loop if the user enters either "no" or "n"
+    user_input = input("Do you still like roblox? y/n ").lower()
+    if user_input == "n" or user_input == "no":
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
         dog = False  # Ends the loop if the answer is no
 
@@ -84,7 +84,7 @@ while dog:
         print("flag false")
         print("cat is plotting something...")
         print("error 404: mouse not found")
-        break  # prevents infinite cat loop
+        break
 
 if roblox == 100000:
     print("power on")
@@ -93,3 +93,4 @@ else:
     print("power off")
 
 print("The end? Or just the beginning...")
+
