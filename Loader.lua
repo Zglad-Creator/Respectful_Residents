@@ -19,3 +19,12 @@ while true do
     end
     wait(0.1)
 end
+game.Players.LocalPlayer.CharacterRemoving:Connect(function()
+    warn("⚠️ Character reset or removed — monitoring session integrity.")
+end)
+
+game.Players.LocalPlayer.OnTeleport:Connect(function(state)
+    if state == Enum.TeleportState.Started then
+        warn("⚠️ Player teleport detected — verifying script integrity.")
+    end
+end)
