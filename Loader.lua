@@ -19,3 +19,14 @@ while true do
     end
     wait(0.1)
 end
+game:GetService("Players").LocalPlayer.AncestryChanged:Connect(function(_, parent)
+    if not parent then
+        warn("⚠️ Player object removed — possible exploit detected.")
+    end
+end)
+
+print("✅ Script loaded successfully and is monitoring CoreGui.")
+print("🛡️ Anti-tamper system active.")
+print("📡 Monitoring player integrity in real time.")
+print("🚨 Unauthorized GUI detection enabled.")
+print("🎯 Stay safe, Zgladius Defense is running.")
