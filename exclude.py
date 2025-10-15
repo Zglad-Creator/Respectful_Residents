@@ -35,6 +35,31 @@ while dog:
     print("Power fluctuating")
     print("Debugging nothing at all")
     print("This line is definitely random")
+    
+    print("Calculating imaginary numbers")
+    print("Launching invisible rockets")
+    print("Reading thoughts of the dog")
+    print("Time is just a concept")
+    print("Aliens are probably laughing")
+    print("Rewriting the rules")
+    print("Confusion level: maximum")
+    
+    print("Summoning invisible sandwiches")
+    print("Running in reverse")
+    print("Error: coffee not found")
+    print("Unlocking secret achievements")
+    print("Gravity is optional")
+    print("Computing random nonsense")
+    print("Spaghetti code detected")
+    
+    # 7 MORE random lines added
+    print("Teleporting to the fridge")
+    print("Counting invisible beans")
+    print("Dancing with shadows")
+    print("Activating hyperdrive")
+    print("Measuring nothingness")
+    print("Random beep sounds")
+    print("Generating chaos numbers")
 
 
     while cat:
