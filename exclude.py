@@ -11,7 +11,7 @@ while dog:
     if user_input == "n" or user_input == "no":
         print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
         dog = False  # Ends the loop if the answer is no
-
+        
     print("bon is funny")
     print("clutch!!")
     print("random chaos incoming...")
@@ -46,6 +46,14 @@ while dog:
     print("Power fluctuating")
     print("Debugging nothing at all")
     print("This line is definitely random")
+
+    print("Turning into a ninja...")
+    print("Sushi lunch break")
+    print("Ninjato disappeared?")
+    print("Chaotic simulation rambles onward")
+    print("Energy diminishing")
+    print("Falling asleep...")
+    print("Dreaming")
 
     print("Calculating imaginary numbers")
     print("Launching invisible rockets")
