@@ -1,200 +1,65 @@
-phone = True
-while phone:
-    user_input = input("True or false: Thienlac is cool: ")
-    if user_input == "True" or user_input == "true" or user_input == "t":
-        print("That's what I thought.")
-        phone = False
-    if user_input == "False" or user_input == "false" or user_input == "f":
-        print("No, Thienlac is cool.")
+# New logic-based chaos: Time travel simulation
+time_travel_enabled = random.choice([True, False])
+print("Time travel module status:", "Enabled" if time_travel_enabled else "Disabled")
 
-
-dog = True
-like_count = 0  # Initialize a counter to track how many times the user says "yes"
-roblox = 100000
-cat = True
-
-while dog:
-    print("I like roblox")
-
-    user_input = input("Do you still like roblox? y/n ").lower()
-    if user_input == "n" or user_input == "no":
-        print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
-        dog = False  # Ends the loop if the answer is no
-
-    print("bon is funny")
-    print("clutch!!")
-    print("random chaos incoming...")
-    like_count += 1
-
-    # 7 NEW lines of actual code (logic-based, not just print)
-    import random
-    random_value = random.randint(1, 100)
-    if random_value % 2 == 0:
-        print("Even chaos level detected:", random_value)
+if time_travel_enabled:
+    print("Traveling to the year", random.randint(3020, 9999))
+    paradox_level = random.randint(1, 10)
+    print("Paradox level:", paradox_level)
+    if paradox_level > 7:
+        print("WARNING: Timeline instability detected!")
     else:
-        print("Odd chaos level detected:", random_value)
-    chaos_multiplier = like_count * random_value
-    print("Chaos multiplier is:", chaos_multiplier)
-
-    print("like_count is now", like_count)
-    print("snakes everywhere")
-    print("launching into orbit")
-
-    print("Warning: unknown variable detected")
-    print("System malfunction in progress")
-    print("Turning off lights... maybe")
-    print("Rebooting imagination module")
-    print("Error: too much fun")
-    print("Spinning in circles...")
-    print("Inserting random numbers:", like_count * 7)
-    
-    print("Activating stealth mode")
-    print("Unexpected dance break")
-    print("Check inventory: empty")
-    print("Simulation of chaos continues")
-    print("Power fluctuating")
-    print("Debugging nothing at all")
-    print("This line is definitely random")
-
-    print("Calculating imaginary numbers")
-    print("Launching invisible rockets")
-    print("Reading thoughts of the dog")
-    print("Time is just a concept")
-    print("Aliens are probably laughing")
-    print("Rewriting the rules")
-    print("Confusion level: maximum")
-
-    print("Summoning invisible sandwiches")
-    print("Running in reverse")
-    print("Error: coffee not found")
-    print("Unlocking secret achievements")
-    print("Gravity is optional")
-    print("Computing random nonsense")
-    print("Spaghetti code detected")
-
-    # 7 MORE random lines added
-    print("Teleporting to the fridge")
-    print("Counting invisible beans")
-    print("Dancing with shadows")
-    print("Activating hyperdrive")
-    print("Measuring nothingness")
-    print("Random beep sounds")
-    print("Generating chaos numbers")
-
-    # 7 NEW random lines added below
-    print("Uploading dreams to the cloud")
-    print("Charging emotional batteries")
-    print("Compiling laughter.exe")
-    print("Decrypting banana protocols")
-    print("Rendering pixelated universes")
-    print("Synchronizing with parallel timelines")
-    print("Executing undefined behavior")
-
-    while cat:
-        print("flag false")
-        print("cat is plotting something...")
-        print("error 404: mouse not found")
-        break
-
-if roblox == 100000:
-    print("power on")
-    print("do not unplug the mainframe!")
+        print("Timeline relatively stable... for now.")
 else:
-    print("power off")
-print("Recalculating purpose of toasters")
-print("Engaging interdimensional elevator")
-print("Compiling jokes database...")
-print("Silence detected... adding more noise")
-print("Calibrating potato engine")
-print("Downloading extra reality...")
-print("Quantum ducks detected in system")
-print("Do not press the red button—oh no")
-print("Reloading cosmic memes")
-print("Translating cat language... failed")
-print("Restarting universe to apply updates")
-print("Taming digital unicorns")
-print("Watering virtual plants")
-print("Initiating dramatic pause")
+    print("Time travel unavailable. Please reboot your DeLorean.")
 
-print("The end? Or just the beginning...")
-import time
-mystery_number = random.randint(1, 50)
-print("Generating secret number:", mystery_number)
-
-for i in range(3):
-    print("Loading suspense" + "." * i)
-    time.sleep(0.2)
-
-if mystery_number > 25:
-    print("ALERT: Mystery number is dangerously high!")
+# Alien encounter simulation
+aliens_present = random.choice([True, False])
+if aliens_present:
+    print("Alien contact established 👽")
+    alien_language = "".join(random.choices("ΔΞΩ§†µ", k=8))
+    print("Alien message received:", alien_language)
+    print("Attempting universal translator...")
+    translation_success = random.choice([True, False])
+    if translation_success:
+        print("Translation: 'Send more memes.'")
+    else:
+        print("Translation failed. Initiating interpretive dance.")
 else:
-    print("Mystery number stable... for now.")
+    print("No aliens... just raccoons in space suits.")
 
-print("Initiating banana launcher")
-print("Calculating cheese velocity")
-print("Warning: logic not found")
-print("Taking a nap mid-code")
-print("Searching for lost socks")
-print("Trying to be normal... failed")
-print("Reversing gravity temporarily")
-print("Rolling the dice of destiny")
-
-# 7 new logical lines
-inventory = ["rock", "stick", "mystery goo"]
-print("Inventory contains:", len(inventory), "items")
-if "mystery goo" in inventory:
-    print("Mystery goo status: ALIVE?!")
+# Add a mini-quest decision
+quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
+if quest in ['y', 'yes']:
+    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase"])
+    print(f"You've entered the {realm}!")
+    challenge_rating = random.randint(1, 100)
+    print("Challenge rating:", challenge_rating)
+    if challenge_rating > 50:
+        print("It's dangerous! You need backup.")
+    else:
+        print("You handle it like a pro—epic win!")
 else:
-    print("Everything seems normal... suspiciously normal")
+    print("You wisely walk away. The portal sighs in disappointment.")
 
-energy_level = like_count * mystery_number
-print("Energy level critical:", energy_level)
-
-if energy_level > 500:
-    print("WARNING: Overload imminent!")
+# Add another layer of random logic
+meme_quality = random.randint(0, 10)
+print("Meme quality score:", meme_quality)
+if meme_quality < 3:
+    print("Too stale. Try again.")
+elif meme_quality < 7:
+    print("Mediocre meme. Slight chuckle achieved.")
 else:
-    print("Systems holding... barely")
+    print("Legendary meme! You broke the simulation.")
 
-# More random prints
-print("Summoning rubber ducks")
-print("Asking AI for sandwich")
-print("Error: sandwich denied")
-print("Painting invisible wall")
-print("Teleporting to kitchen again")
-print("Reality.exe stopped responding")
-print("Installing chaos update 2.0")
-print("Finding meaning of code...")
-print("Meaning not found. Try again.")
-print("Pulling cosmic prank")
-print("Debugging dreams")
-print("Refactoring universe")
-
-# more logic-based chaos
-secret_code = "".join(random.choice("ABC123") for _ in range(6))
-print("Generated access code:", secret_code)
-
-if secret_code.startswith("A"):
-    print("Access granted to Level A madness")
-else:
-    print("Redirecting to chaotic basement")
-
-luck = random.random()
-print("Luck factor:", luck)
-if luck > 0.7:
-    print("You are blessed by the RNG gods")
-else:
-    print("RNG gods are unimpressed...")
-
-print("End of script detected... or is it??")
-
-print("\n[System check: End phase initiated]")
-
-final_roll = random.randint(1, 10)
-print(f"Final diagnostic number: {final_roll}")
-
-if final_roll >= 8:
-    print("System verdict: Unstable... chaos levels rising again.")
-elif final_roll >= 4:
-    print("System verdict: Functioning within unpredictable limits.")
-else:
-    print("System verdict: Stable. Against all odds.")
+# Final print storm
+print("Reality now bending...")
+print("Frogs with jetpacks incoming")
+print("Downloading more bananas...")
+print("Error 008: Too much awesome")
+print("The rubber duck army salutes you")
+print("A wild potato appears")
+print("Your keyboard is now a musical instrument")
+print("Good job! Or terrible mistake?")
+print("Rolling out the red carpet of destiny...")
+print("End of chaos... just kidding.")
