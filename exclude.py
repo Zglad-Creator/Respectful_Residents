@@ -177,3 +177,44 @@ else:
     print("RNG gods are unimpressed...")
 
 print("End of script detected... or is it??")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("\n[Final log: The system takes a deep breath]")
+
+# random mood generator
+mood = random.choice(["sleepy", "content", "curious", "peaceful", "slightly hungry"])
+print(f"Current system mood: {mood}")
+
+if mood == "sleepy":
+    print("System curling up for a quick nap... zzz.")
+elif mood == "content":
+    print("All circuits smiling softly. Everything feels okay.")
+elif mood == "curious":
+    print("System peeks around... wondering what you’ll code next.")
+elif mood == "peaceful":
+    print("Silence. Calm. A perfect shutdown.")
+else:
+    print("System quietly opens the fridge. Just a snack break.")
+
+print("Good job, coder. System appreciates your energy")
+print("Shutting down with good vibes only")
