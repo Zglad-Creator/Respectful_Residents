@@ -99,16 +99,55 @@ if roblox == 100000:
     print("power on")
     print("do not unplug the mainframe!")
 else:
-    print("power off")
+    print("Time travel unavailable. Please reboot your DeLorean.")
 
-# 7 final new lines added here
-print("Recalculating purpose of toasters")
-print("Engaging interdimensional elevator")
-print("Compiling jokes database...")
-print("Silence detected... adding more noise")
-print("Taming digital unicorns")
-print("Watering virtual plants")
-print("Initiating dramatic pause")
+# Alien encounter simulation
+aliens_present = random.choice([True, False])
+if aliens_present:
+    print("Alien contact established 👽")
+    alien_language = "".join(random.choices("ΔΞΩ§†µ", k=8))
+    print("Alien message received:", alien_language)
+    print("Attempting universal translator...")
+    translation_success = random.choice([True, False])
+    if translation_success:
+        print("Translation: 'Send more memes.'")
+    else:
+        print("Translation failed. Initiating interpretive dance.")
+else:
+    print("No aliens... just raccoons in space suits.")
 
-print("The end? Or just the beginning...")
+# Add a mini-quest decision
+quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
+if quest in ['y', 'yes']:
+    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase"])
+    print(f"You've entered the {realm}!")
+    challenge_rating = random.randint(1, 100)
+    print("Challenge rating:", challenge_rating)
+    if challenge_rating > 50:
+        print("It's dangerous! You need backup.")
+    else:
+        print("You handle it like a pro—epic win!")
+else:
+    print("You wisely walk away. The portal sighs in disappointment.")
 
+# Add another layer of random logic
+meme_quality = random.randint(0, 10)
+print("Meme quality score:", meme_quality)
+if meme_quality < 3:
+    print("Too stale. Try again.")
+elif meme_quality < 7:
+    print("Mediocre meme. Slight chuckle achieved.")
+else:
+    print("Legendary meme! You broke the simulation.")
+
+# Final print storm
+print("Reality now bending...")
+print("Frogs with jetpacks incoming")
+print("Downloading more bananas...")
+print("Error 008: Too much awesome")
+print("The rubber duck army salutes you")
+print("A wild potato appears")
+print("Your keyboard is now a musical instrument")
+print("Good job! Or terrible mistake?")
+print("Rolling out the red carpet of destiny...")
+print("End of chaos... just kidding.")
