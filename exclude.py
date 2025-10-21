@@ -1,179 +1,125 @@
+import random
+import time
 
-dog = True
-like_count = 0  # Initialize a counter to track how many times the user says "yes"
-roblox = 100000
-cat = True
+portal_open = True
+enthusiasm_level = 0
+simulation_score = 123456
+cat_awake = True
 
-while dog:
-    print("I like roblox")
+while portal_open:
+    print("Welcome to the Infinite Pizza Simulator")
 
-    user_input = input("Do you still like roblox? y/n ").lower()
-    if user_input == "n" or user_input == "no":
-        print(f"Okay, stopping now! You said you liked roblox {like_count} times.")
-        dog = False  # Ends the loop if the answer is no
-
-    print("bon is funny")
-    print("clutch!!")
-    print("random chaos incoming...")
-    like_count += 1
-
-    # 7 NEW lines of actual code (logic-based, not just print)
-    import random
-    random_value = random.randint(1, 100)
-    if random_value % 2 == 0:
-        print("Even chaos level detected:", random_value)
-    else:
-        print("Odd chaos level detected:", random_value)
-    chaos_multiplier = like_count * random_value
-    print("Chaos multiplier is:", chaos_multiplier)
-
-    print("like_count is now", like_count)
-    print("snakes everywhere")
-    print("launching into orbit")
-
-    print("Warning: unknown variable detected")
-    print("System malfunction in progress")
-    print("Turning off lights... maybe")
-    print("Rebooting imagination module")
-    print("Error: too much fun")
-    print("Spinning in circles...")
-    print("Inserting random numbers:", like_count * 7)
-    
-    print("Activating stealth mode")
-    print("Unexpected dance break")
-    print("Check inventory: empty")
-    print("Simulation of chaos continues")
-    print("Power fluctuating")
-    print("Debugging nothing at all")
-    print("This line is definitely random")
-
-    print("Calculating imaginary numbers")
-    print("Launching invisible rockets")
-    print("Reading thoughts of the dog")
-    print("Time is just a concept")
-    print("Aliens are probably laughing")
-    print("Rewriting the rules")
-    print("Confusion level: maximum")
-
-    print("Summoning invisible sandwiches")
-    print("Running in reverse")
-    print("Error: coffee not found")
-    print("Unlocking secret achievements")
-    print("Gravity is optional")
-    print("Computing random nonsense")
-    print("Spaghetti code detected")
-
-    # 7 MORE random lines added
-    print("Teleporting to the fridge")
-    print("Counting invisible beans")
-    print("Dancing with shadows")
-    print("Activating hyperdrive")
-    print("Measuring nothingness")
-    print("Random beep sounds")
-    print("Generating chaos numbers")
-
-    # 7 NEW random lines added below
-    print("Uploading dreams to the cloud")
-    print("Charging emotional batteries")
-    print("Compiling laughter.exe")
-    print("Decrypting banana protocols")
-    print("Rendering pixelated universes")
-    print("Synchronizing with parallel timelines")
-    print("Executing undefined behavior")
-
-    while cat:
-        print("flag false")
-        print("cat is plotting something...")
-        print("error 404: mouse not found")
+    mood = input("Still excited about pizza simulations? y/n ").strip().lower()
+    if mood in ["n", "no"]:
+        print(f"Simulation ending... you maintained hype {enthusiasm_level} times.")
+        portal_open = False
         break
 
-if roblox == 100000:
-    print("power on")
-    print("do not unplug the mainframe!")
+    print("Uploading cheese matrix")
+    print("Anchovy drive spinning at full speed")
+    print("Chaos calibration in progress...")
+
+    enthusiasm_level += 1
+    glitch_factor = random.randint(10, 999)
+    
+    if glitch_factor % 3 == 0:
+        print("Triangular glitch detected:", glitch_factor)
+    else:
+        print("Non-triangular anomaly spotted:", glitch_factor)
+
+    spaghetti_ratio = glitch_factor * enthusiasm_level
+    print("Current spaghetti ratio:", spaghetti_ratio)
+
+    print("Launching pepperoni rockets")
+    print("Downloading crust updates")
+    print("Randomizing toppings...")
+    print("Toppings multiplier:", enthusiasm_level * 7)
+
+    print("Compiling pineapple algorithm")
+    print("Deploying invisible pizzas")
+    print("Cooking time distortion activated")
+    print("Pizza count: ∞")
+    print("Calculating slice geometry")
+    print("Crunch level: legendary")
+
+    # 7 surreal lines
+    print("Shuffling cosmic deck of cards")
+    print("Tickling black holes for fun")
+    print("Turning socks into time machines")
+    print("Simulating duck orchestra")
+    print("Pretending to be normal.exe")
+    print("Feeding caffeine to the computer")
+    print("Rerouting nonsense through logic gates")
+
+    while cat_awake:
+        print("Cat is doing taxes on your behalf")
+        print("Furball processing complete")
+        print("Sneaky mode: ON")
+        break
+
+# Post-loop: system checks
+if simulation_score == 123456:
+    print("🟢 Core simulation integrity: 100%")
+    print("⚡ WARNING: Too much pizza detected")
 else:
-    print("power off")
-print("Recalculating purpose of toasters")
-print("Engaging interdimensional elevator")
-print("Compiling jokes database...")
-print("Silence detected... adding more noise")
-print("Calibrating potato engine")
-print("Downloading extra reality...")
-print("Quantum ducks detected in system")
-print("Do not press the red button—oh no")
-print("Reloading cosmic memes")
-print("Translating cat language... failed")
-print("Restarting universe to apply updates")
-print("Taming digital unicorns")
-print("Watering virtual plants")
-print("Initiating dramatic pause")
+    print("🔴 Simulation unstable... abandoning crust ship!")
 
-print("The end? Or just the beginning...")
-import time
-mystery_number = random.randint(1, 50)
-print("Generating secret number:", mystery_number)
+# Continue chaos
+print("Interfacing with toaster A.I.")
+print("Uploading dreams to the pizza cloud")
+print("Pineapple approval rating: 67%")
+print("Installing update: 'Sauce Protocol 9.3'")
+print("Error 409: Toppings conflict")
+print("Quantum oven recalibrating")
+print("Loading cheese-based economy")
 
-for i in range(3):
-    print("Loading suspense" + "." * i)
-    time.sleep(0.2)
+# Suspenseful mystery
+mystery_value = random.randint(1, 42)
+print("Mystery sauce index:", mystery_value)
 
-if mystery_number > 25:
-    print("ALERT: Mystery number is dangerously high!")
+for dots in range(4):
+    print("Simmering" + "." * dots)
+    time.sleep(0.15)
+
+if mystery_value % 2 == 0:
+    print("Even sauce! Spicy probability doubled.")
 else:
-    print("Mystery number stable... for now.")
+    print("Odd sauce detected. Cooling with logic.")
 
-print("Initiating banana launcher")
-print("Calculating cheese velocity")
-print("Warning: logic not found")
-print("Taking a nap mid-code")
-print("Searching for lost socks")
-print("Trying to be normal... failed")
-print("Reversing gravity temporarily")
-print("Rolling the dice of destiny")
+# Logical section
+inventory = ["napkin", "fork", "infinite breadsticks"]
+print("Inventory items:", inventory)
 
-# 7 new logical lines
-inventory = ["rock", "stick", "mystery goo"]
-print("Inventory contains:", len(inventory), "items")
-if "mystery goo" in inventory:
-    print("Mystery goo status: ALIVE?!")
+if "fork" in inventory:
+    print("You are ready for formal pizza consumption.")
 else:
-    print("Everything seems normal... suspiciously normal")
+    print("Warning: pizza may become unmanageable")
 
-energy_level = like_count * mystery_number
-print("Energy level critical:", energy_level)
+pizza_energy = enthusiasm_level * mystery_value
+print("Energy output:", pizza_energy)
 
-if energy_level > 500:
-    print("WARNING: Overload imminent!")
+if pizza_energy > 300:
+    print("SYSTEM STRESS: Pizza overload imminent")
 else:
-    print("Systems holding... barely")
+    print("All systems deliciously nominal")
 
-# More random prints
-print("Summoning rubber ducks")
-print("Asking AI for sandwich")
-print("Error: sandwich denied")
-print("Painting invisible wall")
-print("Teleporting to kitchen again")
-print("Reality.exe stopped responding")
-print("Installing chaos update 2.0")
-print("Finding meaning of code...")
-print("Meaning not found. Try again.")
-print("Pulling cosmic prank")
-print("Debugging dreams")
-print("Refactoring universe")
+# Random conclusion
+secret_token = "".join(random.choices("PIZZA42", k=6))
+print("Authentication token:", secret_token)
 
-# more logic-based chaos
-secret_code = "".join(random.choice("ABC123") for _ in range(6))
-print("Generated access code:", secret_code)
-
-if secret_code.startswith("A"):
-    print("Access granted to Level A madness")
+if "Z" in secret_token:
+    print("Accessing secret pizza dimension...")
 else:
-    print("Redirecting to chaotic basement")
+    print("Redirected to sauce labyrinth.")
 
-luck = random.random()
-print("Luck factor:", luck)
-if luck > 0.7:
-    print("You are blessed by the RNG gods")
+luck_roll = random.uniform(0.0, 1.0)
+print("Luck roll:", round(luck_roll, 3))
+
+if luck_roll > 0.85:
+    print("✨ You win the Pizza Multiverse Trophy!")
 else:
-    print("RNG gods are unimpressed...")
+    print("You just get crumbs... but they’re still tasty.")
 
-print("End of script detected... or is it??")
+print("System shutdown initiated.")
+print("Goodbye, fellow topping engineer.")
+print("Or... are you already a slice of code?")
