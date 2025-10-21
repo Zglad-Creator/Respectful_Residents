@@ -151,3 +151,13 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+# Mini feature: user chaos rating system
+chaos_rating = random.randint(1, 10)
+print("\nFinal chaos rating:", chaos_rating)
+if chaos_rating > 7:
+    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
+elif chaos_rating > 3:
+    print("🌪 Moderate chaos detected. Proceed with caution.")
+else:
+    print("🌈 Minimal chaos. Balance restored... for now.")
