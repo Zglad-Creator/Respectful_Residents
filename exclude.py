@@ -1,125 +1,65 @@
-import random
-import time
+# New logic-based chaos: Time travel simulation
+time_travel_enabled = random.choice([True, False])
+print("Time travel module status:", "Enabled" if time_travel_enabled else "Disabled")
 
-portal_open = True
-enthusiasm_level = 0
-simulation_score = 123456
-cat_awake = True
-
-while portal_open:
-    print("Welcome to the Infinite Pizza Simulator")
-
-    mood = input("Still excited about pizza simulations? y/n ").strip().lower()
-    if mood in ["n", "no"]:
-        print(f"Simulation ending... you maintained hype {enthusiasm_level} times.")
-        portal_open = False
-        break
-
-    print("Uploading cheese matrix")
-    print("Anchovy drive spinning at full speed")
-    print("Chaos calibration in progress...")
-
-    enthusiasm_level += 1
-    glitch_factor = random.randint(10, 999)
-    
-    if glitch_factor % 3 == 0:
-        print("Triangular glitch detected:", glitch_factor)
+if time_travel_enabled:
+    print("Traveling to the year", random.randint(3020, 9999))
+    paradox_level = random.randint(1, 10)
+    print("Paradox level:", paradox_level)
+    if paradox_level > 7:
+        print("WARNING: Timeline instability detected!")
     else:
-        print("Non-triangular anomaly spotted:", glitch_factor)
-
-    spaghetti_ratio = glitch_factor * enthusiasm_level
-    print("Current spaghetti ratio:", spaghetti_ratio)
-
-    print("Launching pepperoni rockets")
-    print("Downloading crust updates")
-    print("Randomizing toppings...")
-    print("Toppings multiplier:", enthusiasm_level * 7)
-
-    print("Compiling pineapple algorithm")
-    print("Deploying invisible pizzas")
-    print("Cooking time distortion activated")
-    print("Pizza count: ∞")
-    print("Calculating slice geometry")
-    print("Crunch level: legendary")
-
-    # 7 surreal lines
-    print("Shuffling cosmic deck of cards")
-    print("Tickling black holes for fun")
-    print("Turning socks into time machines")
-    print("Simulating duck orchestra")
-    print("Pretending to be normal.exe")
-    print("Feeding caffeine to the computer")
-    print("Rerouting nonsense through logic gates")
-
-    while cat_awake:
-        print("Cat is doing taxes on your behalf")
-        print("Furball processing complete")
-        print("Sneaky mode: ON")
-        break
-
-# Post-loop: system checks
-if simulation_score == 123456:
-    print("🟢 Core simulation integrity: 100%")
-    print("⚡ WARNING: Too much pizza detected")
+        print("Timeline relatively stable... for now.")
 else:
-    print("🔴 Simulation unstable... abandoning crust ship!")
+    print("Time travel unavailable. Please reboot your DeLorean.")
 
-# Continue chaos
-print("Interfacing with toaster A.I.")
-print("Uploading dreams to the pizza cloud")
-print("Pineapple approval rating: 67%")
-print("Installing update: 'Sauce Protocol 9.3'")
-print("Error 409: Toppings conflict")
-print("Quantum oven recalibrating")
-print("Loading cheese-based economy")
-
-# Suspenseful mystery
-mystery_value = random.randint(1, 42)
-print("Mystery sauce index:", mystery_value)
-
-for dots in range(4):
-    print("Simmering" + "." * dots)
-    time.sleep(0.15)
-
-if mystery_value % 2 == 0:
-    print("Even sauce! Spicy probability doubled.")
+# Alien encounter simulation
+aliens_present = random.choice([True, False])
+if aliens_present:
+    print("Alien contact established 👽")
+    alien_language = "".join(random.choices("ΔΞΩ§†µ", k=8))
+    print("Alien message received:", alien_language)
+    print("Attempting universal translator...")
+    translation_success = random.choice([True, False])
+    if translation_success:
+        print("Translation: 'Send more memes.'")
+    else:
+        print("Translation failed. Initiating interpretive dance.")
 else:
-    print("Odd sauce detected. Cooling with logic.")
+    print("No aliens... just raccoons in space suits.")
 
-# Logical section
-inventory = ["napkin", "fork", "infinite breadsticks"]
-print("Inventory items:", inventory)
-
-if "fork" in inventory:
-    print("You are ready for formal pizza consumption.")
+# Add a mini-quest decision
+quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
+if quest in ['y', 'yes']:
+    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase"])
+    print(f"You've entered the {realm}!")
+    challenge_rating = random.randint(1, 100)
+    print("Challenge rating:", challenge_rating)
+    if challenge_rating > 50:
+        print("It's dangerous! You need backup.")
+    else:
+        print("You handle it like a pro—epic win!")
 else:
-    print("Warning: pizza may become unmanageable")
+    print("You wisely walk away. The portal sighs in disappointment.")
 
-pizza_energy = enthusiasm_level * mystery_value
-print("Energy output:", pizza_energy)
-
-if pizza_energy > 300:
-    print("SYSTEM STRESS: Pizza overload imminent")
+# Add another layer of random logic
+meme_quality = random.randint(0, 10)
+print("Meme quality score:", meme_quality)
+if meme_quality < 3:
+    print("Too stale. Try again.")
+elif meme_quality < 7:
+    print("Mediocre meme. Slight chuckle achieved.")
 else:
-    print("All systems deliciously nominal")
+    print("Legendary meme! You broke the simulation.")
 
-# Random conclusion
-secret_token = "".join(random.choices("PIZZA42", k=6))
-print("Authentication token:", secret_token)
-
-if "Z" in secret_token:
-    print("Accessing secret pizza dimension...")
-else:
-    print("Redirected to sauce labyrinth.")
-
-luck_roll = random.uniform(0.0, 1.0)
-print("Luck roll:", round(luck_roll, 3))
-
-if luck_roll > 0.85:
-    print("✨ You win the Pizza Multiverse Trophy!")
-else:
-    print("You just get crumbs... but they’re still tasty.")
-
-print("System shutdown initiated.")
-print("Goodbye, fellow topping engineer.")
-print("Or... are you already a slice of code?")
+# Final print storm
+print("Reality now bending...")
+print("Frogs with jetpacks incoming")
+print("Downloading more bananas...")
+print("Error 008: Too much awesome")
+print("The rubber duck army salutes you")
+print("A wild potato appears")
+print("Your keyboard is now a musical instrument")
+print("Good job! Or terrible mistake?")
+print("Rolling out the red carpet of destiny...")
+print("End of chaos... just kidding.")
