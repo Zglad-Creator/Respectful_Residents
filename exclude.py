@@ -92,12 +92,17 @@ if roblox == 100000:
     print("do not unplug the mainframe!")
 else:
     print("power off")
-
-# 7 final new lines added here
 print("Recalculating purpose of toasters")
 print("Engaging interdimensional elevator")
 print("Compiling jokes database...")
 print("Silence detected... adding more noise")
+print("Calibrating potato engine")
+print("Downloading extra reality...")
+print("Quantum ducks detected in system")
+print("Do not press the red button—oh no")
+print("Reloading cosmic memes")
+print("Translating cat language... failed")
+print("Restarting universe to apply updates")
 print("Taming digital unicorns")
 print("Watering virtual plants")
 print("Initiating dramatic pause")
