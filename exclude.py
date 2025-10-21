@@ -108,11 +108,72 @@ print("Watering virtual plants")
 print("Initiating dramatic pause")
 
 print("The end? Or just the beginning...")
+import time
+mystery_number = random.randint(1, 50)
+print("Generating secret number:", mystery_number)
 
-print("Generating infinite waffles")
-print("Time loop initiated accidentally")
-print("Unstable molecule dancing detected")
-print("Rebooting hamster wheel processor")
-print("Encrypting thoughts with bubble wrap")
-print("Cosmic ping request timed out")
-print("Warning: sarcasm levels critical")
+for i in range(3):
+    print("Loading suspense" + "." * i)
+    time.sleep(0.2)
+
+if mystery_number > 25:
+    print("ALERT: Mystery number is dangerously high!")
+else:
+    print("Mystery number stable... for now.")
+
+print("Initiating banana launcher")
+print("Calculating cheese velocity")
+print("Warning: logic not found")
+print("Taking a nap mid-code")
+print("Searching for lost socks")
+print("Trying to be normal... failed")
+print("Reversing gravity temporarily")
+print("Rolling the dice of destiny")
+
+# 7 new logical lines
+inventory = ["rock", "stick", "mystery goo"]
+print("Inventory contains:", len(inventory), "items")
+if "mystery goo" in inventory:
+    print("Mystery goo status: ALIVE?!")
+else:
+    print("Everything seems normal... suspiciously normal")
+
+energy_level = like_count * mystery_number
+print("Energy level critical:", energy_level)
+
+if energy_level > 500:
+    print("WARNING: Overload imminent!")
+else:
+    print("Systems holding... barely")
+
+# More random prints
+print("Summoning rubber ducks")
+print("Asking AI for sandwich")
+print("Error: sandwich denied")
+print("Painting invisible wall")
+print("Teleporting to kitchen again")
+print("Reality.exe stopped responding")
+print("Installing chaos update 2.0")
+print("Finding meaning of code...")
+print("Meaning not found. Try again.")
+print("Pulling cosmic prank")
+print("Debugging dreams")
+print("Refactoring universe")
+
+# more logic-based chaos
+secret_code = "".join(random.choice("ABC123") for _ in range(6))
+print("Generated access code:", secret_code)
+
+if secret_code.startswith("A"):
+    print("Access granted to Level A madness")
+else:
+    print("Redirecting to chaotic basement")
+
+luck = random.random()
+print("Luck factor:", luck)
+if luck > 0.7:
+    print("You are blessed by the RNG gods")
+else:
+    print("RNG gods are unimpressed...")
+
+print("End of script detected... or is it??")
