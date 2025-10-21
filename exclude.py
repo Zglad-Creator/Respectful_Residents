@@ -151,3 +151,41 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Mini feature: random sound effect simulator
+sound_effects = [
+    "*dramatic drum roll*",
+    "*intense zoom-in noise*",
+    "*confused duck quack*",
+    "*keyboard typing intensifies*",
+    "*suspenseful whoosh*"
+]
+
+print("\n🔊 Sound effect:", random.choice(sound_effects))
