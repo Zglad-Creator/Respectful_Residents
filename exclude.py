@@ -178,43 +178,14 @@ else:
 
 print("End of script detected... or is it??")
 
+print("\n[System check: End phase initiated]")
 
+final_roll = random.randint(1, 10)
+print(f"Final diagnostic number: {final_roll}")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print("\n[Final log: The system takes a deep breath]")
-
-# random mood generator
-mood = random.choice(["sleepy", "content", "curious", "peaceful", "slightly hungry"])
-print(f"Current system mood: {mood}")
-
-if mood == "sleepy":
-    print("System curling up for a quick nap... zzz.")
-elif mood == "content":
-    print("All circuits smiling softly. Everything feels okay.")
-elif mood == "curious":
-    print("System peeks around... wondering what you’ll code next.")
-elif mood == "peaceful":
-    print("Silence. Calm. A perfect shutdown.")
+if final_roll >= 8:
+    print("System verdict: Unstable... chaos levels rising again.")
+elif final_roll >= 4:
+    print("System verdict: Functioning within unpredictable limits.")
 else:
-    print("System quietly opens the fridge. Just a snack break.")
-
-print("Good job, coder. System appreciates your energy")
-print("Shutting down with good vibes only")
+    print("System verdict: Stable. Against all odds.")
