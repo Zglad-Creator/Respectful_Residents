@@ -151,3 +151,24 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+
+
+
+
+
+
+
+
+
+
+# Mini feature: random fortune generator
+fortunes = [
+    "You will discover a secret meme today.",
+    "A raccoon in space approves your actions.",
+    "The chaos gods are pleased with your code.",
+    "Beware of spaghetti code lurking nearby.",
+    "Today is a good day to debug the impossible."
+]
+
+print("\n✨ Fortune cookie of the day:", random.choice(fortunes))
