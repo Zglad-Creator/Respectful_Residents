@@ -151,3 +151,63 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Mini feature: random system status report
+system_status = random.choice(["Stable", "Glitching", "Overheating", "Dreaming", "Running on vibes"])
+print("\n🛰 System Status Report: Current state ->", system_status)
+
+if system_status == "Overheating":
+    print("🔥 Alert: Too much chaos detected! Cooling fans engaged...")
+elif system_status == "Glitching":
+    print("⚠️ Warning: Reality distortion at 42%. Proceed anyway.")
+elif system_status == "Dreaming":
+    print("💤 The simulation is taking a nap...")
+elif system_status == "Running on vibes":
+    print("✨ Energy source: pure chaos and optimism.")
+else:
+    print("✅ All systems nominal. Continue the nonsense!")
+
