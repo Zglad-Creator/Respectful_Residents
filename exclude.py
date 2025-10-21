@@ -177,3 +177,15 @@ else:
     print("RNG gods are unimpressed...")
 
 print("End of script detected... or is it??")
+
+print("\n[System check: End phase initiated]")
+
+final_roll = random.randint(1, 10)
+print(f"Final diagnostic number: {final_roll}")
+
+if final_roll >= 8:
+    print("System verdict: Unstable... chaos levels rising again.")
+elif final_roll >= 4:
+    print("System verdict: Functioning within unpredictable limits.")
+else:
+    print("System verdict: Stable. Against all odds.")
