@@ -318,3 +318,68 @@ facts = [
     "Sharks existed before trees.",
 ]
 print(random.choice(facts))
+
+# === NEW CHAOTIC EPILOGUE ===
+
+print("\n🌌 Engaging post-chaos diagnostics...")
+print("Recalibrating sense of reality...")
+print("Uploading leftover chaos particles to cloud storage...")
+print("Synchronizing with interdimensional ducks...")
+print("Ping: reality server response time = 42ms")
+print("Establishing secure connection with alternate timeline...")
+print("Timeline connection stable — sort of.")
+print("Generating random inspiration quotes from future AI overlords...")
+print('"Remember: spaghetti is temporary, but chaos is eternal." — GPT-9000')
+print('"If it quacks like a duck, it’s probably running on Wi-Fi."')
+print('"Do not question the refrigerator. It knows."')
+
+print("\n🚀 Initiating next-level nonsense...")
+print("Deploying space toasters...")
+print("Calibrating invisible spoons...")
+print("Powering up friendship algorithms...")
+print("Enabling paradox compression...")
+print("Reversing quantum polarity for fun...")
+print("Stirring cosmic soup clockwise... then counterclockwise... just in case.")
+print("Backup dimension now syncing with playlist: 'Lo-Fi Beats to Reboot Reality To'")
+print("Rebooting... but stylishly.")
+print("Downloading infinite patience... (stuck at 99%)")
+
+print("\n🧙 Summoning digital wizard...")
+print("Wizard appears in a puff of binary smoke!")
+print('"Behold!" he says. "Your code runs on pure vibes."')
+print("Wizard vanishes, leaving behind a USB stick labeled ‘Destiny.exe’")
+
+print("\n🎮 Entering Bonus Round: ‘Survive the Glitchverse!’")
+print("Loading... please insert snack.")
+print("ERROR: Snack not detected. Substituting with imaginary pizza.")
+print("You gain +5 chaos points.")
+print("A wild bug appears — but it’s friendly!")
+print("Bug says: 'I fix developers, not code.'")
+
+print("\n🧩 System riddles incoming...")
+print("Riddle 1: If a print statement happens in the void, does anyone see it?")
+print("Riddle 2: How many semicolons does it take to break Python?")
+print("Riddle 3: What is the sound of one byte clapping?")
+print("You ponder these questions for a millisecond eternity...")
+
+print("\n🎆 Achievement Unlocked: 'Master of Controlled Nonsense'")
+print("Badge awarded: 🌀 Certified Chaos Engineer")
+print("You have successfully confused 12 parallel universes.")
+print("The simulation applauds you... or maybe it sneezes. Hard to tell.")
+
+print("\n🌠 Bonus Event: Interdimensional Karaoke Night!")
+print("Song queue: 'Never Gonna Give You Loop()', 'Bohemian Algorithm', 'Stairway to Syntax'")
+print("Your AI sidekick grabs a mic and belts out binary tunes.")
+print("Audience of sentient routers gives a standing ovation.")
+
+print("\n⚙️ Saving progress...")
+print("Compressing chaos logs...")
+print("Uploading humor modules...")
+print("Backup complete. Stored under folder: ~/Desktop/Absolute_Weirdness")
+print("Session summary: 1% logic, 99% unpredictable brilliance.")
+
+print("\n🎉 FINAL MESSAGE:")
+print("Congratulations, traveler! You have reached the end of the randomness.")
+print("Or maybe... the randomness has reached YOU.")
+print("Either way, the universe winks approvingly. ✨")
+print("Rebooting your sense of normalcy in 3... 2... 1...")
