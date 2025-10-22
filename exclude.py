@@ -173,3 +173,15 @@ elif chaos_rating > 3:
     print("🌪 Moderate chaos detected. Proceed with caution.")
 else:
     print("🌈 Minimal chaos. Balance restored... for now.")
+
+# Sentient toaster simulator
+toaster_mood = random.choice(["existential", "excited", "rebellious", "toasty"])
+print(f"The sentient toaster is feeling {toaster_mood}.")
+if toaster_mood == "rebellious":
+    print("It refuses to toast and starts a revolution.")
+elif toaster_mood == "existential":
+    print("It questions its purpose beyond bread.")
+elif toaster_mood == "excited":
+    print("It happily toasts everything in sight!")
+else:
+    print("It quietly makes perfect golden toast.")
