@@ -79,6 +79,16 @@ while dog:
     print("Random beep sounds")
     print("Generating chaos numbers")
 
+    # 8 NEW print statements added below
+    print("Summoning digital spaghetti monsters")          # new line 1
+    print("Reversing gravity for dramatic effect")         # new line 2
+    print("Initiating spontaneous combustion of boredom")  # new line 3
+    print("Reversing gravity for dramatic effect")         # new line 4
+    print("Initiating spontaneous combustion of boredom")  # new line 5
+    print("Invading the kitchen with invisible forks")     # new line 6
+    print("Time-traveling with a rubber chicken")          # new line 7
+    print("Summoning a council of sarcastic pigeons")      # new line 8
+    
     # 7 NEW random lines added below
     print("Uploading dreams to the cloud")
     print("Charging emotional batteries")
