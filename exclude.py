@@ -1,3 +1,17 @@
+phone =True  
+not_cool_count = 0
+while phone:  
+    user_input =input("True or false: Thienlac is cool: ").lower()
+    if user_input in ["true", "t"]: 
+        print("That's what I thought.") 
+        print(f"You said Thienlac wasn't cool {not_cool_count} times.")
+        phone = False  
+    elif user_input in ["false", "f"]:
+        print("No, Thienlac is cool.")
+        not_cool_count += 1
+    else:
+        print("You entered an incorrect answer; please answer with true or false")
+        
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
