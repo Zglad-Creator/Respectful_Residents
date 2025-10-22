@@ -1,4 +1,3 @@
-
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -139,6 +138,16 @@ elif meme_quality < 7:
     print("Mediocre meme. Slight chuckle achieved.")
 else:
     print("Legendary meme! You broke the simulation.")
+
+# ⏳ Time Anomaly Detector (new thing added)
+time_rift_level = random.randint(1, 9001)
+print("Scanning for time anomalies...")
+if time_rift_level > 8000:
+    print("It's over 8000!!! TIME EXPLOSION IMMINENT!")
+elif time_rift_level > 4000:
+    print("Mild timeline distortion detected. Proceed with chaos.")
+else:
+    print("Timeline appears stable. For now...")
 
 # Final print storm
 print("Reality now bending...")
