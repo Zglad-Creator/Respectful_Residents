@@ -173,3 +173,71 @@ elif chaos_rating > 3:
     print("🌪 Moderate chaos detected. Proceed with caution.")
 else:
     print("🌈 Minimal chaos. Balance restored... for now.")
+    print("\n=== Mini Game: Guess the Number ===")
+secret_number = random.randint(1, 5)
+guess = int(input("Guess a number between 1 and 5: "))
+if guess == secret_number:
+    print("🎯 Bullseye! You guessed it!")
+else:
+    print(f"❌ Nope! The correct number was {secret_number}")
+
+# AI SIDEKICK GENERATOR
+print("\nSpawning your AI sidekick...")
+sidekick_names = ["Z3-N0", "Bytey", "C.L.A.N.K", "SnarkBot", "404", "LunaChip"]
+sidekick_traits = ["sarcastic", "loyal", "glitchy", "hyperactive", "mysterious", "singing"]
+name = random.choice(sidekick_names)
+trait = random.choice(sidekick_traits)
+print(f"Your new AI sidekick is {name}, and it is very {trait}.")
+
+# FORTUNE COOKIE
+print("\n🥠 Opening a digital fortune cookie...")
+fortunes = [
+    "You will accidentally invent a new dance move.",
+    "Beware of sneaky pigeons tomorrow.",
+    "Your code is 98% banana-free.",
+    "Soon, socks will be important. Trust me.",
+    "An invisible chicken is watching you.",
+]
+print("Fortune:", random.choice(fortunes))
+
+# GLITCH EVENT SIMULATION
+print("\n⚠️ Simulating random glitch event...")
+glitch_events = [
+    "Reality duplicated. You exist twice.",
+    "All vowels temporarily replaced with 7.",
+    "You can now only move diagonally.",
+    "Time reversed for 3 seconds.",
+    "Everything is slightly to the left now.",
+]
+print("GLITCH:", random.choice(glitch_events))
+
+# TIME LOOP DETECTION
+print("\n🌀 Time Loop Scanner initialized...")
+time_loop = random.choice([True, False, False])
+if time_loop:
+    print("WARNING: You are currently stuck in a time loop.")
+    print("To escape, say the secret word: 'waffletron'")
+    code_word = input("Say the secret word: ").lower()
+    if code_word == "waffletron":
+        print("⏳ Time loop broken. You're free!")
+    else:
+        print("🔁 Loop continues. Try again next cycle.")
+else:
+    print("No time loop detected. Time is flowing normally... for now.")
+
+# PET ROCK NAME GENERATOR
+print("\n🪨 Naming your pet rock...")
+rock_names = ["Pebbleton", "Rocky", "Shatter", "Oblivia", "Stone Cold", "Boulder Buddy"]
+pet_rock_name = random.choice(rock_names)
+print(f"Your pet rock is now named {pet_rock_name}. Treat them well.")
+
+# BONUS FEATURE: WEIRD FACT OF THE DAY
+print("\n🧠 Weird Fact of the Day:")
+facts = [
+    "Bananas are berries, but strawberries aren’t.",
+    "Octopuses have 3 hearts.",
+    "The unicorn is Scotland’s national animal.",
+    "A single spaghetti is called a 'spaghetto'.",
+    "Sharks existed before trees.",
+]
+print(random.choice(facts))
