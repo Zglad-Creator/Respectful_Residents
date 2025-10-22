@@ -1,4 +1,3 @@
-
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -139,6 +138,17 @@ elif meme_quality < 7:
     print("Mediocre meme. Slight chuckle achieved.")
 else:
     print("Legendary meme! You broke the simulation.")
+
+# 🐾 Glitch Pet Generator (new thing added)
+glitch_pets = ["Static Llama", "Quantum Ferret", "404 Hamster", "Null Cat", "RGB Platypus"]
+pet = random.choice(glitch_pets)
+print(f"A new pet has appeared: {pet}!")
+if "404" in pet:
+    print("It refuses to exist.")
+elif "Quantum" in pet:
+    print("It is both here and not here.")
+else:
+    print(f"{pet} stares into your soul lovingly.")
 
 # Final print storm
 print("Reality now bending...")
