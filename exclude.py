@@ -230,156 +230,20 @@ print("Reality now bending...")
 print("Frogs with jetpacks incoming")
 print("Downloading more bananas...")
 print("Error 008: Too much awesome")
-print("The rubber duck army salutes you")
-print("A wild potato appears")
-print("Your keyboard is now a musical instrument")
-print("Good job! Or terrible mistake?")
-print("Rolling out the red carpet of destiny...")
-print("End of chaos... just kidding.")
-print("System reboot imminent...")
-print("Too late. Simulation evolving...")
-print("New patch notes: added 15% more weirdness.")
-print("Quantum squirrels detected in the mainframe.")
-print("Ducks forming a union. Demanding more bread.")
-print("Reversing gravity for fun...")
-print("Activating disco protocol 💃")
-print("Teleporting user to meme dimension in 3... 2... 1...")
-print("Dimension 9 just sent a friend request.")  # 🆕 (6)
+print("Initializing endless loop of fun")
 
-chaos_rating = random.randint(1, 10)
-print("\nFinal chaos rating:", chaos_rating)
-if chaos_rating > 7:
-    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
-elif chaos_rating > 3:
-    print("🌪 Moderate chaos detected. Proceed with caution.")
-else:
-    print("🌈 Minimal chaos. Balance restored... for now.")
-    print("\n=== Mini Game: Guess the Number ===")
-secret_number = random.randint(1, 5)
-guess = int(input("Guess a number between 1 and 5: "))
-if guess == secret_number:
-    print("🎯 Bullseye! You guessed it!")
-else:
-    print(f"❌ Nope! The correct number was {secret_number}")
-
-print("Achievement unlocked: Survived the script of chaos!")  # 🆕 (7)
-
-print("\nSpawning your AI sidekick...")
-sidekick_names = ["Z3-N0", "Bytey", "C.L.A.N.K", "SnarkBot", "404", "LunaChip"]
-sidekick_traits = ["sarcastic", "loyal", "glitchy", "hyperactive", "mysterious", "singing"]
-name = random.choice(sidekick_names)
-trait = random.choice(sidekick_traits)
-print(f"Your new AI sidekick is {name}, and it is very {trait}.")
-
-print("\n🥠 Opening a digital fortune cookie...")
-fortunes = [
-    "You will accidentally invent a new dance move.",
-    "Beware of sneaky pigeons tomorrow.",
-    "Your code is 98% banana-free.",
-    "Soon, socks will be important. Trust me.",
-    "An invisible chicken is watching you.",
-]
-print("Fortune:", random.choice(fortunes))
-
-print("\n⚠️ Simulating random glitch event...")
-glitch_events = [
-    "Reality duplicated. You exist twice.",
-    "All vowels temporarily replaced with 7.",
-    "You can now only move diagonally.",
-    "Time reversed for 3 seconds.",
-    "Everything is slightly to the left now.",
-]
-print("GLITCH:", random.choice(glitch_events))
-
-print("\n🌀 Time Loop Scanner initialized...")
-time_loop = random.choice([True, False, False])
-if time_loop:
-    print("WARNING: You are currently stuck in a time loop.")
-    print("To escape, say the secret word: 'waffletron'")
-    code_word = input("Say the secret word: ").lower()
-    if code_word == "waffletron":
-        print("⏳ Time loop broken. You're free!")
-    else:
-        print("🔁 Loop continues. Try again next cycle.")
-else:
-    print("No time loop detected. Time is flowing normally... for now.")
-
-print("\n🪨 Naming your pet rock...")
-rock_names = ["Pebbleton", "Rocky", "Shatter", "Oblivia", "Stone Cold", "Boulder Buddy"]
-pet_rock_name = random.choice(rock_names)
-print(f"Your pet rock is now named {pet_rock_name}. Treat them well.")
-
-print("\n🧠 Weird Fact of the Day:")
-facts = [
-    "Bananas are berries, but strawberries aren’t.",
-    "Octopuses have 3 hearts.",
-    "The unicorn is Scotland’s national animal.",
-    "A single spaghetti is called a 'spaghetto'.",
-    "Sharks existed before trees.",
-]
-print(random.choice(facts))
-
-# === NEW CHAOTIC EPILOGUE ===
-
-print("\n🌌 Engaging post-chaos diagnostics...")
-print("Recalibrating sense of reality...")
-print("Uploading leftover chaos particles to cloud storage...")
-print("Synchronizing with interdimensional ducks...")
-print("Ping: reality server response time = 42ms")
-print("Establishing secure connection with alternate timeline...")
-print("Timeline connection stable — sort of.")
-print("Generating random inspiration quotes from future AI overlords...")
-print('"Remember: spaghetti is temporary, but chaos is eternal." — GPT-9000')
-print('"If it quacks like a duck, it’s probably running on Wi-Fi."')
-print('"Do not question the refrigerator. It knows."')
-
-print("\n🚀 Initiating next-level nonsense...")
-print("Deploying space toasters...")
-print("Calibrating invisible spoons...")
-print("Powering up friendship algorithms...")
-print("Enabling paradox compression...")
-print("Reversing quantum polarity for fun...")
-print("Stirring cosmic soup clockwise... then counterclockwise... just in case.")
-print("Backup dimension now syncing with playlist: 'Lo-Fi Beats to Reboot Reality To'")
-print("Rebooting... but stylishly.")
-print("Downloading infinite patience... (stuck at 99%)")
-
-print("\n🧙 Summoning digital wizard...")
-print("Wizard appears in a puff of binary smoke!")
-print('"Behold!" he says. "Your code runs on pure vibes."')
-print("Wizard vanishes, leaving behind a USB stick labeled ‘Destiny.exe’")
-
-print("\n🎮 Entering Bonus Round: ‘Survive the Glitchverse!’")
-print("Loading... please insert snack.")
-print("ERROR: Snack not detected. Substituting with imaginary pizza.")
-print("You gain +5 chaos points.")
-print("A wild bug appears — but it’s friendly!")
-print("Bug says: 'I fix developers, not code.'")
-
-print("\n🧩 System riddles incoming...")
-print("Riddle 1: If a print statement happens in the void, does anyone see it?")
-print("Riddle 2: How many semicolons does it take to break Python?")
-print("Riddle 3: What is the sound of one byte clapping?")
-print("You ponder these questions for a millisecond eternity...")
-
-print("\n🎆 Achievement Unlocked: 'Master of Controlled Nonsense'")
-print("Badge awarded: 🌀 Certified Chaos Engineer")
-print("You have successfully confused 12 parallel universes.")
-print("The simulation applauds you... or maybe it sneezes. Hard to tell.")
-
-print("\n🌠 Bonus Event: Interdimensional Karaoke Night!")
-print("Song queue: 'Never Gonna Give You Loop()', 'Bohemian Algorithm', 'Stairway to Syntax'")
-print("Your AI sidekick grabs a mic and belts out binary tunes.")
-print("Audience of sentient routers gives a standing ovation.")
-
-print("\n⚙️ Saving progress...")
-print("Compressing chaos logs...")
-print("Uploading humor modules...")
-print("Backup complete. Stored under folder: ~/Desktop/Absolute_Weirdness")
-print("Session summary: 1% logic, 99% unpredictable brilliance.")
-
+# 🎉 FINAL MESSAGES
 print("\n🎉 FINAL MESSAGE:")
 print("Congratulations, traveler! You have reached the end of the randomness.")
 print("Or maybe... the randomness has reached YOU.")
 print("Either way, the universe winks approvingly. ✨")
 print("Rebooting your sense of normalcy in 3... 2... 1...")
+
+# 🆕 7 NEW END MESSAGES
+print("Wait... did someone forget to feed the quantum hamsters?")
+print("System alert: your imagination just leveled up to tier ∞.")
+print("Synchronizing dreams with alternate universe servers...")
+print("A mysterious narrator whispers: 'You weren’t supposed to see this ending.'")
+print("Plot twist: you *were* the simulation all along.")
+print("The fridge hums ominously... reality trembles.")
+print("Simulation terminated... or maybe just taking a nap.")
