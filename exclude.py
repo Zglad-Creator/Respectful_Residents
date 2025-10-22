@@ -152,23 +152,12 @@ print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
 
-
-
-
-
-
-
-
-
-
-
-# Mini feature: random fortune generator
-fortunes = [
-    "You will discover a secret meme today.",
-    "A raccoon in space approves your actions.",
-    "The chaos gods are pleased with your code.",
-    "Beware of spaghetti code lurking nearby.",
-    "Today is a good day to debug the impossible."
-]
-
-print("\n✨ Fortune cookie of the day:", random.choice(fortunes))
+# Mini feature: user chaos rating system
+chaos_rating = random.randint(1, 10)
+print("\nFinal chaos rating:", chaos_rating)
+if chaos_rating > 7:
+    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
+elif chaos_rating > 3:
+    print("🌪 Moderate chaos detected. Proceed with caution.")
+else:
+    print("🌈 Minimal chaos. Balance restored... for now.")
