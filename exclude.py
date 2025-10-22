@@ -1,4 +1,3 @@
-
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -139,6 +138,19 @@ elif meme_quality < 7:
     print("Mediocre meme. Slight chuckle achieved.")
 else:
     print("Legendary meme! You broke the simulation.")
+
+# 🪨 NEW THING ADDED: Pet Rock Simulator
+print("Launching Pet Rock Simulator...")
+pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping"])
+print(f"Your pet rock is currently: {pet_rock_mood}")
+if pet_rock_mood == "happy":
+    print("It rolls around joyfully.")
+elif pet_rock_mood == "bored":
+    print("It stares blankly into the void.")
+elif pet_rock_mood == "angry":
+    print("It does nothing... but aggressively.")
+else:
+    print("It snores gently. You tuck it in.")
 
 # Final print storm
 print("Reality now bending...")
