@@ -139,15 +139,18 @@ elif meme_quality < 7:
 else:
     print("Legendary meme! You broke the simulation.")
 
-# ⏳ Time Anomaly Detector (new thing added)
-time_rift_level = random.randint(1, 9001)
-print("Scanning for time anomalies...")
-if time_rift_level > 8000:
-    print("It's over 8000!!! TIME EXPLOSION IMMINENT!")
-elif time_rift_level > 4000:
-    print("Mild timeline distortion detected. Proceed with chaos.")
+# 🪨 NEW THING ADDED: Pet Rock Simulator
+print("Launching Pet Rock Simulator...")
+pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping"])
+print(f"Your pet rock is currently: {pet_rock_mood}")
+if pet_rock_mood == "happy":
+    print("It rolls around joyfully.")
+elif pet_rock_mood == "bored":
+    print("It stares blankly into the void.")
+elif pet_rock_mood == "angry":
+    print("It does nothing... but aggressively.")
 else:
-    print("Timeline appears stable. For now...")
+    print("It snores gently. You tuck it in.")
 
 # Final print storm
 print("Reality now bending...")
@@ -160,3 +163,13 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+# Mini feature: user chaos rating system
+chaos_rating = random.randint(1, 10)
+print("\nFinal chaos rating:", chaos_rating)
+if chaos_rating > 7:
+    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
+elif chaos_rating > 3:
+    print("🌪 Moderate chaos detected. Proceed with caution.")
+else:
+    print("🌈 Minimal chaos. Balance restored... for now.")
