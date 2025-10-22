@@ -1,5 +1,13 @@
-import random
-
+phone =True  
+while phone:  
+    user_input =input("True or false: Thienlac is cool: ").lower()
+    if user_input in ["true", "t"]: 
+        print("That's what I thought.")  
+        phone = False  
+    elif user_input in ["false", "f"]:
+        print("No, Thienlac is cool.")
+    else:
+        print("You entered an incorrect answer; please answer with true or false")
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -18,6 +26,35 @@ while dog:
     print("random chaos incoming...")
     like_count += 1
 
+    # NEW LOGIC BASED LINES OF CODE
+    
+    # New logic additions
+    roblox_change = random.randint(-1000, 1000)
+    roblox += roblox_change
+    print("Roblox fluctuation:", roblox_change, "| New roblox value:", roblox)
+
+    # Track how chaotic things are getting
+    chaos_level = chaos_multiplier + roblox_change
+    if chaos_level > 5000:
+        print("🚨 CHAOS OVERLOAD DETECTED! Initiating slow-motion mode...")
+    elif chaos_level < 0:
+        print("💤 Negative chaos... did we break the matrix?")
+    else:
+        print("Chaos status: Stable... for now.")
+
+    # Random chance to toggle the cat's behavior
+    cat_event = random.choice(["nap", "hack_system", "vanish", "meow_loop"])
+    if cat_event == "hack_system":
+        print("🐱 Cat is hacking the mainframe!")
+        roblox -= 42  # Cat messes with roblox value
+    elif cat_event == "meow_loop":
+        print("Cat is stuck in an infinite meow loop. Send help.")
+
+    # Add a fake debug state
+    debug_mode = random.choice([True, False])
+    if debug_mode:
+        print("[DEBUG MODE ENABLED] Diagnostic data streaming...")
+    
     # 7 NEW lines of actual code (logic-based, not just print)
     random_value = random.randint(1, 100)
     if random_value % 2 == 0:
@@ -39,6 +76,11 @@ while dog:
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
 
+    # 2 new print statements
+
+    print("Calculating probability of cheese invasion")
+    print("Deploying emergency rubber duck unit")
+    
     print("Activating stealth mode")
     print("Unexpected dance break")
     print("Check inventory: empty")
@@ -63,6 +105,10 @@ while dog:
     print("Rewriting the rules")
     print("Confusion level: maximum")
 
+    # 2 NEW PRINT statements
+    print("Reality glitch detected in sector 42")
+    print("Backup unicorns have been notified")
+    
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
@@ -80,6 +126,16 @@ while dog:
     print("Random beep sounds")
     print("Generating chaos numbers")
 
+    # 8 NEW print statements added below
+    print("Summoning digital spaghetti monsters")          # new line 1
+    print("Reversing gravity for dramatic effect")         # new line 2
+    print("Initiating spontaneous combustion of boredom")  # new line 3
+    print("Reversing gravity for dramatic effect")         # new line 4
+    print("Initiating spontaneous combustion of boredom")  # new line 5
+    print("Invading the kitchen with invisible forks")     # new line 6
+    print("Time-traveling with a rubber chicken")          # new line 7
+    print("Summoning a council of sarcastic pigeons")      # new line 8
+    
     # 7 NEW random lines added below
     print("Uploading dreams to the cloud")
     print("Charging emotional batteries")
@@ -205,88 +261,71 @@ elif chaos_rating > 3:
     print("🌪 Moderate chaos detected. Proceed with caution.")
 else:
     print("🌈 Minimal chaos. Balance restored... for now.")
-
-print("Saving chaos logs to memory sector Z-42...")
-print("Thanks for participating in this nonsense.")
-print("Program will now self-destruct in... just kidding. Maybe.")
-
-# === NEW ADDITIONS BELOW ===
-
-print("Initiating bonus round of nonsense...")
-print("Detecting infinite recursion... aborting... just kidding again.")
-print("A duck just learned Python.")
-print("Your computer is now self-aware and slightly confused.")
-print("Generating fake progress bar: [██████████░░░░░░░░░░░░░] 47%")
-print("Uploading vibes to main server...")
-print("Someone just sneezed in the matrix.")
-print("Meanwhile, in an alternate reality, this code is running in C++.")
-print("Rebooting hamster wheel of time.")
-print("Spawning digital pigeons...")
-print("They are now stealing your virtual breadcrumbs.")
-print("Planting quantum potatoes in cyberspace.")
-print("Generating infinite loop of dad jokes...")
-print("Compiling sense of humor... failed.")
-print("Initiating emergency sarcasm protocol.")
-print("Banana overload in progress 🍌🍌🍌")
-print("Unplugging gravity... wait, that seems unsafe.")
-print("Deploying backup chaos modules.")
-print("Calibrating nonsense engines to 110%")
-print("Synchronizing with meme cloud version 3.14159")
-print("You feel a sudden urge to press F5 for no reason.")
-print("A ghost coder approves of this message.")
-print("Simulating existential dread... successful.")
-print("Debugging parallel universe instances...")
-print("Warning: your pet rock just joined a rock band.")
-print("Downloading chaos DLC pack...")
-print("New feature unlocked: 'Spaghetti Forecast System™'")
-print("Probability of noodles in your near future: 83%")
-print("Issuing honorary PhD in Controlled Madness.")
-print("🌌 Reality expansion complete.")
-print("🎉 Congratulations, you’ve reached Peak Absurdity! 🎉")
-
-# --- Mini feature: GLITCH STORM DETECTOR ---
-print("\n>>> Initializing Glitch Storm Detector 9000 <<<")
-glitch_intensity = random.randint(1, 100)
-print(f"Detected glitch intensity level: {glitch_intensity}")
-if glitch_intensity > 80:
-    print("⚠️ Major distortion! Reality pixels melting!")
-elif glitch_intensity > 40:
-    print("Minor glitch detected. Expect random colors.")
+    print("\n=== Mini Game: Guess the Number ===")
+secret_number = random.randint(1, 5)
+guess = int(input("Guess a number between 1 and 5: "))
+if guess == secret_number:
+    print("🎯 Bullseye! You guessed it!")
 else:
-    print("Stable for now. Reality holding together... mostly.")
+    print(f"❌ Nope! The correct number was {secret_number}")
 
-# --- Mini feature: SNACK GENERATOR 2.0 ---
-print("\nActivating Snack Generator 2.0...")
-snack = random.choice(["cosmic donut", "quantum taco", "glitch pizza", "binary burger", "infinite popcorn", "AI-flavored cookie"])
-drink = random.choice(["antimatter coffee", "dimension smoothie", "code-flavored soda", "lava latte", "nebula milkshake"])
-print(f"Snack materialized: {snack}")
-print(f"Paired beverage: {drink}")
-print("Taste evaluation in progress...")
-taste_rating = random.randint(1, 10)
-if taste_rating > 8:
-    print("Delicious beyond comprehension!")
-elif taste_rating > 4:
-    print("Pretty good, if slightly reality-bending.")
+# AI SIDEKICK GENERATOR
+print("\nSpawning your AI sidekick...")
+sidekick_names = ["Z3-N0", "Bytey", "C.L.A.N.K", "SnarkBot", "404", "LunaChip"]
+sidekick_traits = ["sarcastic", "loyal", "glitchy", "hyperactive", "mysterious", "singing"]
+name = random.choice(sidekick_names)
+trait = random.choice(sidekick_traits)
+print(f"Your new AI sidekick is {name}, and it is very {trait}.")
+
+# FORTUNE COOKIE
+print("\n🥠 Opening a digital fortune cookie...")
+fortunes = [
+    "You will accidentally invent a new dance move.",
+    "Beware of sneaky pigeons tomorrow.",
+    "Your code is 98% banana-free.",
+    "Soon, socks will be important. Trust me.",
+    "An invisible chicken is watching you.",
+]
+print("Fortune:", random.choice(fortunes))
+
+# GLITCH EVENT SIMULATION
+print("\n⚠️ Simulating random glitch event...")
+glitch_events = [
+    "Reality duplicated. You exist twice.",
+    "All vowels temporarily replaced with 7.",
+    "You can now only move diagonally.",
+    "Time reversed for 3 seconds.",
+    "Everything is slightly to the left now.",
+]
+print("GLITCH:", random.choice(glitch_events))
+
+# TIME LOOP DETECTION
+print("\n🌀 Time Loop Scanner initialized...")
+time_loop = random.choice([True, False, False])
+if time_loop:
+    print("WARNING: You are currently stuck in a time loop.")
+    print("To escape, say the secret word: 'waffletron'")
+    code_word = input("Say the secret word: ").lower()
+    if code_word == "waffletron":
+        print("⏳ Time loop broken. You're free!")
+    else:
+        print("🔁 Loop continues. Try again next cycle.")
 else:
-    print("Tastes like 404 errors and regret.")
-print("Nutrition facts: 0% logic, 100% chaos.")
+    print("No time loop detected. Time is flowing normally... for now.")
 
-# --- Final farewell messages ---
-print("\nFinalizing absurdity logs...")
-print("Converting nonsense into pure entertainment data.")
-print("Uploading laughter frequency to central database.")
-print("Awarding you 10,000 XP in 'Surviving Weird Scripts'.")
-print("Setting mood lighting to 'Chaotic Neon'.")
-print("The rubber duck army sends their regards.")
-print("System whisper: 'Reality is just a sandbox.'")
-print("Goodbye... or is it hello backwards?")
-print("🌀 End of program... unless it decides otherwise.")
+# PET ROCK NAME GENERATOR
+print("\n🪨 Naming your pet rock...")
+rock_names = ["Pebbleton", "Rocky", "Shatter", "Oblivia", "Stone Cold", "Boulder Buddy"]
+pet_rock_name = random.choice(rock_names)
+print(f"Your pet rock is now named {pet_rock_name}. Treat them well.")
 
-# --- 7 NEW FINAL MESSAGES ---
-print("Rebooting imagination engines one last time...")
-print("Quantum ducks have reached enlightenment.")
-print("Initiating infinite nap sequence... zzz...")
-print("All systems report: nonsense levels optimal.")
-print("Transmitting good vibes across the multiverse 🌠")
-print("Auto-saving chaos configuration... complete.")
-print("End of simulation. Or is it the beginning?")
+# BONUS FEATURE: WEIRD FACT OF THE DAY
+print("\n🧠 Weird Fact of the Day:")
+facts = [
+    "Bananas are berries, but strawberries aren’t.",
+    "Octopuses have 3 hearts.",
+    "The unicorn is Scotland’s national animal.",
+    "A single spaghetti is called a 'spaghetto'.",
+    "Sharks existed before trees.",
+]
+print(random.choice(facts))
