@@ -139,15 +139,18 @@ elif meme_quality < 7:
 else:
     print("Legendary meme! You broke the simulation.")
 
-# ☁️ Weather Generator (new thing added)
-weather = random.choice(["solar flares", "banana rain", "pixel fog", "lava snow", "meme storms", "thunderous applause"])
-print("Today's forecast:", weather)
-if weather == "banana rain":
-    print("Wear slippery boots!")
-elif weather == "lava snow":
-    print("That's... scientifically confusing.")
-elif weather == "meme storms":
-    print("Expect LOLs with a chance of ROFL.")
+# 🪨 NEW THING ADDED: Pet Rock Simulator
+print("Launching Pet Rock Simulator...")
+pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping"])
+print(f"Your pet rock is currently: {pet_rock_mood}")
+if pet_rock_mood == "happy":
+    print("It rolls around joyfully.")
+elif pet_rock_mood == "bored":
+    print("It stares blankly into the void.")
+elif pet_rock_mood == "angry":
+    print("It does nothing... but aggressively.")
+else:
+    print("It snores gently. You tuck it in.")
 
 # Final print storm
 print("Reality now bending...")
@@ -160,3 +163,13 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+
+# Mini feature: user chaos rating system
+chaos_rating = random.randint(1, 10)
+print("\nFinal chaos rating:", chaos_rating)
+if chaos_rating > 7:
+    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
+elif chaos_rating > 3:
+    print("🌪 Moderate chaos detected. Proceed with caution.")
+else:
+    print("🌈 Minimal chaos. Balance restored... for now.")
