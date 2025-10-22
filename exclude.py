@@ -1,3 +1,5 @@
+import random
+
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -17,7 +19,6 @@ while dog:
     like_count += 1
 
     # 7 NEW lines of actual code (logic-based, not just print)
-    import random
     random_value = random.randint(1, 100)
     if random_value % 2 == 0:
         print("Even chaos level detected:", random_value)
@@ -88,6 +89,20 @@ while dog:
     print("Synchronizing with parallel timelines")
     print("Executing undefined behavior")
 
+    # 🌟 NEW RANDOM ADDITIONS
+    print("Inventing new colors...")
+    print("Detecting paradox in progress...")
+    print("Creating recursive nonsense loops")
+    print("Befriending the nearest toaster")
+    print("Initializing potato AI")
+    print("Debugging existential dread...")
+    print("Rendering cat in 4D")
+    print("Error: too much caffeine detected")
+    print("Unlocking secret debug menu")
+    print("Reality buffer overflow!")
+    print("Trying to count to infinity... please wait...")
+    print("Launching interdimensional memes")
+
     while cat:
         print("flag false")
         print("cat is plotting something...")
@@ -118,7 +133,7 @@ else:
 # Add a mini-quest decision
 quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
 if quest in ['y', 'yes']:
-    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase"])
+    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase", "Infinite Loop Valley", "Quantum Playground"])
     print(f"You've entered the {realm}!")
     challenge_rating = random.randint(1, 100)
     print("Challenge rating:", challenge_rating)
@@ -126,8 +141,11 @@ if quest in ['y', 'yes']:
         print("It's dangerous! You need backup.")
     else:
         print("You handle it like a pro—epic win!")
+    print("Collecting loot... found: a glowing rubber duck!")
+    print("Portal guardian whispers: 'Beware the semicolons.'")
 else:
     print("You wisely walk away. The portal sighs in disappointment.")
+    print("You feel an odd sense of peace... and mild confusion.")
 
 # Add another layer of random logic
 meme_quality = random.randint(0, 10)
@@ -138,10 +156,12 @@ elif meme_quality < 7:
     print("Mediocre meme. Slight chuckle achieved.")
 else:
     print("Legendary meme! You broke the simulation.")
+print("Uploading meme to cloud storage of destiny...")
+print("Analyzing meme quantum frequency... success!")
 
 # 🪨 NEW THING ADDED: Pet Rock Simulator
 print("Launching Pet Rock Simulator...")
-pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping"])
+pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping", "philosophical", "vibing"])
 print(f"Your pet rock is currently: {pet_rock_mood}")
 if pet_rock_mood == "happy":
     print("It rolls around joyfully.")
@@ -149,6 +169,10 @@ elif pet_rock_mood == "bored":
     print("It stares blankly into the void.")
 elif pet_rock_mood == "angry":
     print("It does nothing... but aggressively.")
+elif pet_rock_mood == "philosophical":
+    print("It contemplates the meaning of pebbles.")
+elif pet_rock_mood == "vibing":
+    print("It bops its nonexistent head to lo-fi beats.")
 else:
     print("It snores gently. You tuck it in.")
 
@@ -163,6 +187,14 @@ print("Your keyboard is now a musical instrument")
 print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
+print("System reboot imminent...")
+print("Too late. Simulation evolving...")
+print("New patch notes: added 15% more weirdness.")
+print("Quantum squirrels detected in the mainframe.")
+print("Ducks forming a union. Demanding more bread.")
+print("Reversing gravity for fun...")
+print("Activating disco protocol 💃")
+print("Teleporting user to meme dimension in 3... 2... 1...")
 
 # Mini feature: user chaos rating system
 chaos_rating = random.randint(1, 10)
@@ -173,3 +205,7 @@ elif chaos_rating > 3:
     print("🌪 Moderate chaos detected. Proceed with caution.")
 else:
     print("🌈 Minimal chaos. Balance restored... for now.")
+
+print("Saving chaos logs to memory sector Z-42...")
+print("Thanks for participating in this nonsense.")
+print("Program will now self-destruct in... just kidding. Maybe.")
