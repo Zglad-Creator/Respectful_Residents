@@ -152,62 +152,12 @@ print("Good job! Or terrible mistake?")
 print("Rolling out the red carpet of destiny...")
 print("End of chaos... just kidding.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Mini feature: random system status report
-system_status = random.choice(["Stable", "Glitching", "Overheating", "Dreaming", "Running on vibes"])
-print("\n🛰 System Status Report: Current state ->", system_status)
-
-if system_status == "Overheating":
-    print("🔥 Alert: Too much chaos detected! Cooling fans engaged...")
-elif system_status == "Glitching":
-    print("⚠️ Warning: Reality distortion at 42%. Proceed anyway.")
-elif system_status == "Dreaming":
-    print("💤 The simulation is taking a nap...")
-elif system_status == "Running on vibes":
-    print("✨ Energy source: pure chaos and optimism.")
+# Mini feature: user chaos rating system
+chaos_rating = random.randint(1, 10)
+print("\nFinal chaos rating:", chaos_rating)
+if chaos_rating > 7:
+    print("⚡ CHAOS LEVEL: EXTREME. Simulation nearly unstable!")
+elif chaos_rating > 3:
+    print("🌪 Moderate chaos detected. Proceed with caution.")
 else:
-    print("✅ All systems nominal. Continue the nonsense!")
-
+    print("🌈 Minimal chaos. Balance restored... for now.")
