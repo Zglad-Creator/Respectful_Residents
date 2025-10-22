@@ -51,7 +51,7 @@ while dog:
     chaos_multiplier = like_count * random_value
     print("Chaos multiplier is:", chaos_multiplier)
 
-    print("Quantum hamsters are powering the mainframe...")  # 🆕 (1)
+    print("Quantum hamsters are powering the mainframe...")
     print("like_count is now", like_count)
     print("snakes everywhere")
     print("launching into orbit")
@@ -75,7 +75,7 @@ while dog:
     print("Debugging nothing at all")
     print("This line is definitely random")
 
-    print("Downloading emotional support algorithms...")  # 🆕 (2)
+    print("Downloading emotional support algorithms...")
 
     print("Turning into a ninja...")
     print("Sushi lunch break")
@@ -141,7 +141,7 @@ while dog:
     print("Reality buffer overflow!")
     print("Trying to count to infinity... please wait...")
     print("Launching interdimensional memes")
-    print("Initiating intergalactic pizza delivery sequence...")  # 🆕 (3)
+    print("Initiating intergalactic pizza delivery sequence...")
 
     while cat:
         print("flag false")
@@ -169,7 +169,7 @@ if aliens_present:
 else:
     print("No aliens... just raccoons in space suits.")
 
-print("Caffeine levels critical: deploying espresso drones...")  # 🆕 (4)
+print("Caffeine levels critical: deploying espresso drones...")
 
 quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
 if quest in ['y', 'yes']:
@@ -198,7 +198,7 @@ else:
 print("Uploading meme to cloud storage of destiny...")
 print("Analyzing meme quantum frequency... success!")
 
-print("Rebooting imagination kernel v2.0...")  # 🆕 (5)
+print("Rebooting imagination kernel v2.0...")
 
 print("Launching Pet Rock Simulator...")
 pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping", "philosophical", "vibing"])
@@ -262,3 +262,12 @@ print("AI narrator signing off. Please feed the raccoons responsibly.")
 print("Quantum pigeons salute you as the credits roll.")
 print("Final message received: 'Keep being weird.'")
 print("End of transmission. ✨")
+
+# 🆕 SEVEN NEW FINAL MESSAGES
+print("Error 9001: Fun levels over 9000! System cannot handle the joy.")
+print("A wormhole opens, delivering a pizza you didn’t order but totally deserve.")
+print("Time traveler appears: ‘Don’t worry, you did everything correctly—mostly.’")
+print("The cosmic hamster union demands better snacks.")
+print("A parallel dimension just liked your code.")
+print("Plot twist: you were the AI all along.")
+print("Final reboot initiated... just kidding. The fun never ends.")
