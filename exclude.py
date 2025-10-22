@@ -281,3 +281,12 @@ print("The rubber duck army sends their regards.")
 print("System whisper: 'Reality is just a sandbox.'")
 print("Goodbye... or is it hello backwards?")
 print("🌀 End of program... unless it decides otherwise.")
+
+# --- 7 NEW FINAL MESSAGES ---
+print("Rebooting imagination engines one last time...")
+print("Quantum ducks have reached enlightenment.")
+print("Initiating infinite nap sequence... zzz...")
+print("All systems report: nonsense levels optimal.")
+print("Transmitting good vibes across the multiverse 🌠")
+print("Auto-saving chaos configuration... complete.")
+print("End of simulation. Or is it the beginning?")
