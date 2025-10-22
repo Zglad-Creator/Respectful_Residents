@@ -1,4 +1,3 @@
-
 dog = True
 like_count = 0  # Initialize a counter to track how many times the user says "yes"
 roblox = 100000
@@ -139,6 +138,16 @@ elif meme_quality < 7:
     print("Mediocre meme. Slight chuckle achieved.")
 else:
     print("Legendary meme! You broke the simulation.")
+
+# ☁️ Weather Generator (new thing added)
+weather = random.choice(["solar flares", "banana rain", "pixel fog", "lava snow", "meme storms", "thunderous applause"])
+print("Today's forecast:", weather)
+if weather == "banana rain":
+    print("Wear slippery boots!")
+elif weather == "lava snow":
+    print("That's... scientifically confusing.")
+elif weather == "meme storms":
+    print("Expect LOLs with a chance of ROFL.")
 
 # Final print storm
 print("Reality now bending...")
