@@ -16,6 +16,8 @@ while dog:
     print("random chaos incoming...")
     like_count += 1
 
+    
+    
     # 7 NEW lines of actual code (logic-based, not just print)
     import random
     random_value = random.randint(1, 100)
@@ -37,6 +39,11 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
+
+    # 2 new print statements
+
+    print("Calculating probability of cheese invasion")
+    print("Deploying emergency rubber duck unit")
     
     print("Activating stealth mode")
     print("Unexpected dance break")
@@ -62,6 +69,10 @@ while dog:
     print("Rewriting the rules")
     print("Confusion level: maximum")
 
+    # 2 NEW PRINT statements
+    print("Reality glitch detected in sector 42")
+    print("Backup unicorns have been notified")
+    
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
