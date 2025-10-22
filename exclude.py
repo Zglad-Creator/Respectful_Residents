@@ -26,6 +26,35 @@ while dog:
     print("random chaos incoming...")
     like_count += 1
 
+    # NEW LOGIC BASED LINES OF CODE
+    
+    # New logic additions
+    roblox_change = random.randint(-1000, 1000)
+    roblox += roblox_change
+    print("Roblox fluctuation:", roblox_change, "| New roblox value:", roblox)
+
+    # Track how chaotic things are getting
+    chaos_level = chaos_multiplier + roblox_change
+    if chaos_level > 5000:
+        print("🚨 CHAOS OVERLOAD DETECTED! Initiating slow-motion mode...")
+    elif chaos_level < 0:
+        print("💤 Negative chaos... did we break the matrix?")
+    else:
+        print("Chaos status: Stable... for now.")
+
+    # Random chance to toggle the cat's behavior
+    cat_event = random.choice(["nap", "hack_system", "vanish", "meow_loop"])
+    if cat_event == "hack_system":
+        print("🐱 Cat is hacking the mainframe!")
+        roblox -= 42  # Cat messes with roblox value
+    elif cat_event == "meow_loop":
+        print("Cat is stuck in an infinite meow loop. Send help.")
+
+    # Add a fake debug state
+    debug_mode = random.choice([True, False])
+    if debug_mode:
+        print("[DEBUG MODE ENABLED] Diagnostic data streaming...")
+    
     # 7 NEW lines of actual code (logic-based, not just print)
     import random
     random_value = random.randint(1, 100)
@@ -47,6 +76,11 @@ while dog:
     print("Error: too much fun")
     print("Spinning in circles...")
     print("Inserting random numbers:", like_count * 7)
+
+    # 2 new print statements
+
+    print("Calculating probability of cheese invasion")
+    print("Deploying emergency rubber duck unit")
     
     print("Activating stealth mode")
     print("Unexpected dance break")
@@ -72,6 +106,10 @@ while dog:
     print("Rewriting the rules")
     print("Confusion level: maximum")
 
+    # 2 NEW PRINT statements
+    print("Reality glitch detected in sector 42")
+    print("Backup unicorns have been notified")
+    
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
