@@ -200,6 +200,17 @@ print("Analyzing meme quantum frequency... success!")
 
 print("Rebooting imagination kernel v2.0...")
 
+# 📊 Player Stats Tracker
+player_stats = {
+    "total_memes_uploaded": meme_quality,
+    "total_chaos_level": chaos_level,
+    "portals_entered": 1 if quest in ['y', 'yes'] else 0
+}
+
+print("\n📝 Player Stats Summary:")
+for stat, value in player_stats.items():
+    print(f"{stat.replace('_', ' ').title()}: {value}")
+
 print("Launching Pet Rock Simulator...")
 pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping", "philosophical", "vibing"])
 print(f"Your pet rock is currently: {pet_rock_mood}")
