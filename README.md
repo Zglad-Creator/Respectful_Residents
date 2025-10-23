@@ -28,6 +28,7 @@ Welcome to **Respectful Residents**, an open-source project for a game developed
 - **Built with RF Library**: Leverages the power of the **RF Library** for smooth and interactive UI elements.
 - **Easy to Integrate**: Simple structure for developers to integrate the GUI into their own games.
 - **Active Community**: We welcome pull requests and collaboration from the community.
+- **Collaboration**: Anyone can contribute improvements or bug fixes.
 
 ---
 
@@ -51,6 +52,7 @@ We welcome contributions from developers of all levels! Here's how you can get s
     git push origin feature-branch
     ```
 5. Open a **Pull Request** to merge your changes back into the original repository.
+6. Wait for **Pull Request** to be reviewed and merged.
 
 ---
 

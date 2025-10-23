@@ -345,34 +345,6 @@ time_portal = random.choice(["open", "closed", "stuck halfway"])
 print(f"Temporal stability: {random.randint(0, 100)}% — portal is {time_portal}.")
 if time_portal == "stuck halfway":
     print("Warning: Half your snacks are now in another timeline!")
-
-# NEW CODE
-
-# 🏀 LeBron Easter Egg
-lebron_quotes = [
-    "You are my sunshine, LeBron.",
-    "LeBron just dunked through time.",
-    "LeBron achieved ultra instinct.",
-    "Basketball detected in the 5th dimension.",
-    "LeBron smiles approvingly from the quantum court."
-]
-print(random.choice(lebron_quotes))
-
-# 🎲 BONUS RANDOMIZER
-dream_sequence = random.choice(["flying", "falling", "time travel", "infinite pizza", "dancing robots"])
-print(f"You suddenly find yourself {dream_sequence} through space-time...")
-
-for i in range(3):
-    print("Echo", i + 1, ":", random.choice(["✨", "💫", "⚡", "🔥", "🌈"]))
-
-luck_factor = random.randint(1, 100)
-print("Luck factor detected:", luck_factor)
-if luck_factor > 80:
-    print("Ultra lucky! You found a golden rubber duck!")
-elif luck_factor < 20:
-    print("Oops... a space raccoon stole your snack.")
-else:
-    print("Perfectly average luck achieved.")
-
-print("End of dream sequence. Returning to normal-ish reality...")
-
+print("Lebron, Lebron, Lebron James")
+if input("yes?")=="yes":
+   print("you are my sunshine lebron")
