@@ -274,6 +274,25 @@ time_portal = random.choice(["open", "closed", "stuck halfway"])
 print(f"Temporal stability: {random.randint(0, 100)}% — portal is {time_portal}.")
 if time_portal == "stuck halfway":
     print("Warning: Half your snacks are now in another timeline!")
+
+# NEW CODE
+
+# 🌌 Multiverse Expansion Mode
+multiverse_chance = random.randint(1, 100)
+if multiverse_chance > 80:
+    universe_effect = random.choice(["reverse_gravity", "loop_messages", "invert_chaos"])
+    print("\n🪐 Multiverse Expansion Activated!")
+    if universe_effect == "reverse_gravity":
+        print("Gravity is inverted! All objects float upwards. Chaos is off the charts!")
+    elif universe_effect == "loop_messages":
+        print("Time echoes! Previous messages start repeating randomly...")
+        repeat_count = random.randint(2, 5)
+        for i in range(repeat_count):
+            print(f"[Time Echo {i+1}] 'Randomness continues...'")
+    elif universe_effect == "invert_chaos":
+        chaos_level = -chaos_level
+        print(f"Chaos levels inverted! New chaos_level: {chaos_level}")
+
 print(Lebron, Lebron, Lebron James)
 if input==yes
    print(you are my sunshine lebron)
