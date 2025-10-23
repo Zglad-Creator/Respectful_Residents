@@ -222,6 +222,26 @@ print("Downloading more bananas...")
 print("Error 008: Too much awesome")
 print("Initializing endless loop of fun")
 
+# NEW: 🪨 Pet Rock Adventure Expansion
+print("\nLaunching Pet Rock Adventure DLC...")
+adventure_outcome = random.choice(["treasure", "storm", "portal", "dance_party"])
+if adventure_outcome == "treasure":
+    print("Your rock discovers a golden pebble of wisdom!")
+elif adventure_outcome == "storm":
+    print("A pebble storm begins! Your rock bravely endures it.")
+elif adventure_outcome == "portal":
+    print("The rock rolls into a glowing portal and disappears...")
+    print("...only to return with sunglasses and a mysterious aura.")
+else:
+    print("Your rock starts an intergalactic dance party with nearby boulders!")
+
+rock_energy = random.randint(1, 100)
+print("Rock energy level:", rock_energy)
+if rock_energy > 80:
+    print("Your rock ascends to pebble nirvana.")
+else:
+    print("Your rock decides to nap again.")
+
 # 🎉 FINAL MESSAGES
 print("\n🎉 FINAL MESSAGE:")
 print("Congratulations, traveler! You have reached the end of the randomness.")
