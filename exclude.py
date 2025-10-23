@@ -44,6 +44,11 @@ while dog:
     roblox_change = random.randint(-1000, 1000)
     roblox += roblox_change
     print("Roblox fluctuation:", roblox_change, "| New roblox value:", roblox)
+    
+    if random.randint(1, 10) == 5:
+        print("Bonus event: You discovered hidden extra points for persistence!")
+    roblox += 500
+        print("Your roblox balance increased to", roblox)
 
     chaos_multiplier = like_count * roblox_change
     chaos_level = chaos_multiplier + roblox_change
