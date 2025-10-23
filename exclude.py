@@ -262,8 +262,6 @@ print("AI narrator signing off. Please feed the raccoons responsibly.")
 print("Quantum pigeons salute you as the credits roll.")
 print("Final message received: 'Keep being weird.'")
 print("End of transmission. ✨")
-
-# 🆕 SEVEN NEW FINAL MESSAGES
 print("Error 9001: Fun levels over 9000! System cannot handle the joy.")
 print("A wormhole opens, delivering a pizza you didn’t order but totally deserve.")
 print("Time traveler appears: ‘Don’t worry, you did everything correctly—mostly.’")
@@ -271,3 +269,8 @@ print("The cosmic hamster union demands better snacks.")
 print("A parallel dimension just liked your code.")
 print("Plot twist: you were the AI all along.")
 print("Final reboot initiated... just kidding. The fun never ends.")
+print("Deploying anti-seriousness shield v3.14...")
+time_portal = random.choice(["open", "closed", "stuck halfway"])
+print(f"Temporal stability: {random.randint(0, 100)}% — portal is {time_portal}.")
+if time_portal == "stuck halfway":
+    print("Warning: Half your snacks are now in another timeline!")
