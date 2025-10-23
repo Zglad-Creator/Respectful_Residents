@@ -19,6 +19,28 @@ while dog:
     print("random chaos incoming...")
     like_count += 1
 
+    # 🏆 Chaos Score Leaderboard Setup
+    leaderboard_file = "leaderboard.txt"
+    
+    def save_score(score):
+        try:
+            with open(leaderboard_file, "a") as f:
+                f.write(str(score) + "\n")
+        except Exception as e:
+            print("[ERROR] Could not save score:", e)
+    
+    def display_leaderboard():
+        try:
+            with open(leaderboard_file, "r") as f:
+                scores = [int(line.strip()) for line in f.readlines()]
+            scores.sort(reverse=True)
+            print("\n🔥 Top Chaos Scores 🔥")
+            for i, s in enumerate(scores[:5], 1):
+                print(f"{i}. {s}")
+        except FileNotFoundError:
+            print("No leaderboard found yet. Be the first chaotic hero!")
+
+
     roblox_change = random.randint(-1000, 1000)
     roblox += roblox_change
     print("Roblox fluctuation:", roblox_change, "| New roblox value:", roblox)
