@@ -95,7 +95,25 @@ while dog:
 
     print("Reality glitch detected in sector 42")
     print("Backup unicorns have been notified")
-    
+
+    # 🎲 Random Event Generator
+    event_chance = random.randint(1, 100)
+    if event_chance > 95:
+        event = random.choice(["alien_invasion", "meme_storm", "time_distortion"])
+        if event == "alien_invasion":
+            print("👽 Aliens just stole your roblox points!")
+            roblox_loss = random.randint(100, 500)
+            roblox -= roblox_loss
+            print(f"Lost {roblox_loss} roblox, new total: {roblox}")
+        elif event == "meme_storm":
+            memes_generated = random.randint(1, 10)
+            like_count += memes_generated
+            print(f"A wild meme storm! Gained {memes_generated} like_count, total now {like_count}")
+        elif event == "time_distortion":
+            print("⏳ Time distortion! Chaos levels fluctuate wildly...")
+            chaos_level += random.randint(-5000, 5000)
+            print(f"New chaos_level: {chaos_level}")
+
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
