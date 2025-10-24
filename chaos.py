@@ -31,3 +31,22 @@ while dog:
         print("💤 Negative chaos... did we break the matrix?")
     else:
         print("Chaos status: Stable... for now.")
+        cat_event = random.choice(["nap", "hack_system", "vanish", "meow_loop"])
+if cat_event == "hack_system":
+    print("🐱 Cat is hacking the mainframe!")
+    roblox -= 42  
+elif cat_event == "meow_loop":
+    print("Cat is stuck in an infinite meow loop. Send help.")
+
+debug_mode = random.choice([True, False])
+if debug_mode:
+    print("[DEBUG MODE ENABLED] Diagnostic data streaming...")
+
+random_value = random.randint(1, 100)
+if random_value % 2 == 0:
+    print("Even chaos level detected:", random_value)
+else:
+    print("Odd chaos level detected:", random_value)
+
+chaos_multiplier = like_count * random_value
+print("Chaos multiplier is:", chaos_multiplier)
