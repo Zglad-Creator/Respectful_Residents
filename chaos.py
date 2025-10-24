@@ -104,3 +104,16 @@ elif pet_rock_mood == "vibing":
     print("It bops its nonexistent head to lo-fi beats.")
 else:
     print("It snores gently. You tuck it in.")
+    print("🎉 FINAL MESSAGE:")
+print("Congratulations, traveler! You have reached the end of the randomness.")
+print("Or maybe... the randomness has reached YOU.")
+print("System alert: your imagination just leveled up to tier ∞.")
+print("Quantum hamster wheel overheating—sending backup gerbils.")
+print("New achievement unlocked: 'Master of Random.'")
+print("Plot twist: you were the AI all along.")
+print("Final reboot initiated... just kidding. The fun never ends.")
+
+time_portal = random.choice(["open", "closed", "stuck halfway"])
+print(f"Temporal stability: {random.randint(0, 100)}% — portal is {time_portal}.")
+if time_portal == "stuck halfway":
+    print("Warning: Half your snacks are now in another timeline!")
