@@ -1,5 +1,5 @@
 import random
-
+print("Good morning ")
 dog = True
 like_count = 0  
 roblox = 100000
@@ -19,9 +19,36 @@ while dog:
     print("random chaos incoming...")
     like_count += 1
 
+    # 🏆 Chaos Score Leaderboard Setup
+    leaderboard_file = "leaderboard.txt"
+    
+    def save_score(score):
+        try:
+            with open(leaderboard_file, "a") as f:
+                f.write(str(score) + "\n")
+        except Exception as e:
+            print("[ERROR] Could not save score:", e)
+    
+    def display_leaderboard():
+        try:
+            with open(leaderboard_file, "r") as f:
+                scores = [int(line.strip()) for line in f.readlines()]
+            scores.sort(reverse=True)
+            print("\n🔥 Top Chaos Scores 🔥")
+            for i, s in enumerate(scores[:5], 1):
+                print(f"{i}. {s}")
+        except FileNotFoundError:
+            print("No leaderboard found yet. Be the first chaotic hero!")
+
+
     roblox_change = random.randint(-1000, 1000)
     roblox += roblox_change
     print("Roblox fluctuation:", roblox_change, "| New roblox value:", roblox)
+    
+    if random.randint(1, 10) == 5:
+        print("Bonus event: You discovered hidden extra points for persistence!")
+    roblox += 500
+        print("Your roblox balance increased to", roblox)
 
     chaos_multiplier = like_count * roblox_change
     chaos_level = chaos_multiplier + roblox_change
@@ -95,7 +122,25 @@ while dog:
 
     print("Reality glitch detected in sector 42")
     print("Backup unicorns have been notified")
-    
+
+    # 🎲 Random Event Generator
+    event_chance = random.randint(1, 100)
+    if event_chance > 95:
+        event = random.choice(["alien_invasion", "meme_storm", "time_distortion"])
+        if event == "alien_invasion":
+            print("👽 Aliens just stole your roblox points!")
+            roblox_loss = random.randint(100, 500)
+            roblox -= roblox_loss
+            print(f"Lost {roblox_loss} roblox, new total: {roblox}")
+        elif event == "meme_storm":
+            memes_generated = random.randint(1, 10)
+            like_count += memes_generated
+            print(f"A wild meme storm! Gained {memes_generated} like_count, total now {like_count}")
+        elif event == "time_distortion":
+            print("⏳ Time distortion! Chaos levels fluctuate wildly...")
+            chaos_level += random.randint(-5000, 5000)
+            print(f"New chaos_level: {chaos_level}")
+
     print("Summoning invisible sandwiches")
     print("Running in reverse")
     print("Error: coffee not found")
@@ -200,6 +245,17 @@ print("Analyzing meme quantum frequency... success!")
 
 print("Rebooting imagination kernel v2.0...")
 
+# 📊 Player Stats Tracker
+player_stats = {
+    "total_memes_uploaded": meme_quality,
+    "total_chaos_level": chaos_level,
+    "portals_entered": 1 if quest in ['y', 'yes'] else 0
+}
+
+print("\n📝 Player Stats Summary:")
+for stat, value in player_stats.items():
+    print(f"{stat.replace('_', ' ').title()}: {value}")
+
 print("Launching Pet Rock Simulator...")
 pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping", "philosophical", "vibing"])
 print(f"Your pet rock is currently: {pet_rock_mood}")
@@ -221,6 +277,26 @@ print("Frogs with jetpacks incoming")
 print("Downloading more bananas...")
 print("Error 008: Too much awesome")
 print("Initializing endless loop of fun")
+
+# NEW: 🪨 Pet Rock Adventure Expansion
+print("\nLaunching Pet Rock Adventure DLC...")
+adventure_outcome = random.choice(["treasure", "storm", "portal", "dance_party"])
+if adventure_outcome == "treasure":
+    print("Your rock discovers a golden pebble of wisdom!")
+elif adventure_outcome == "storm":
+    print("A pebble storm begins! Your rock bravely endures it.")
+elif adventure_outcome == "portal":
+    print("The rock rolls into a glowing portal and disappears...")
+    print("...only to return with sunglasses and a mysterious aura.")
+else:
+    print("Your rock starts an intergalactic dance party with nearby boulders!")
+
+rock_energy = random.randint(1, 100)
+print("Rock energy level:", rock_energy)
+if rock_energy > 80:
+    print("Your rock ascends to pebble nirvana.")
+else:
+    print("Your rock decides to nap again.")
 
 # 🎉 FINAL MESSAGES
 print("\n🎉 FINAL MESSAGE:")
@@ -274,18 +350,35 @@ time_portal = random.choice(["open", "closed", "stuck halfway"])
 print(f"Temporal stability: {random.randint(0, 100)}% — portal is {time_portal}.")
 if time_portal == "stuck halfway":
     print("Warning: Half your snacks are now in another timeline!")
-if time_portal == "unsuccessfull"
-    print(Unsucessfull)
-print(Lebron or Michael Jordan?)
-if answer == (Lebron)
-print(correct!)
-if answer == (Michael Jordan)
-print(incorrect)
-print(lebron is the best nba player)
-print(lebron lebron lebron james)
-print(Lionel Messi or Cristiano Ronaldo?)
-if answer ==(Lionel Messi)
-    print(incorrect)
-if answer== (Cristiano Ronaldo)
-    print(correct)
-print(Cristiano Ronaldo is better than messi)
+
+# NEW CODE
+
+# 🌌 Multiverse Expansion Mode
+multiverse_chance = random.randint(1, 100)
+if multiverse_chance > 80:
+    universe_effect = random.choice(["reverse_gravity", "loop_messages", "invert_chaos"])
+    print("\n🪐 Multiverse Expansion Activated!")
+    if universe_effect == "reverse_gravity":
+        print("Gravity is inverted! All objects float upwards. Chaos is off the charts!")
+    elif universe_effect == "loop_messages":
+        print("Time echoes! Previous messages start repeating randomly...")
+        repeat_count = random.randint(2, 5)
+        for i in range(repeat_count):
+            print(f"[Time Echo {i+1}] 'Randomness continues...'")
+    elif universe_effect == "invert_chaos":
+        chaos_level = -chaos_level
+        print(f"Chaos levels inverted! New chaos_level: {chaos_level}")
+
+print(Lebron, Lebron, Lebron James)
+if input==yes
+   print(you are my sunshine lebron)
+
+
+revert_normal = random.randint(1, 100)
+if revert_normal < 40:
+    revert = random.choice(["wormhole", "tesseract"])
+    print("\n 🌎 Going back to our universe ... ")
+    if revert == "blackhole":
+        print("You have been sucked into a wormhole and dropped back into our current galaxy!")
+    elif revert == "tesseract":
+        print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
