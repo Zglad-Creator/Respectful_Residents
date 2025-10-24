@@ -89,3 +89,18 @@ else:
     print("Legendary meme! You broke the simulation.")
 print("Uploading meme to cloud storage of destiny...")
 print("Analyzing meme quantum frequency... success!")
+print("Launching Pet Rock Simulator...")
+pet_rock_mood = random.choice(["bored", "happy", "angry", "sleeping", "philosophical", "vibing"])
+print(f"Your pet rock is currently: {pet_rock_mood}")
+if pet_rock_mood == "happy":
+    print("It rolls around joyfully.")
+elif pet_rock_mood == "bored":
+    print("It stares blankly into the void.")
+elif pet_rock_mood == "angry":
+    print("It does nothing... but aggressively.")
+elif pet_rock_mood == "philosophical":
+    print("It contemplates the meaning of pebbles.")
+elif pet_rock_mood == "vibing":
+    print("It bops its nonexistent head to lo-fi beats.")
+else:
+    print("It snores gently. You tuck it in.")
