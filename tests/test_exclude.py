@@ -1,5 +1,7 @@
 import unittest
-from joiner import check_dog
+from exclude import check_dog
+
+#note that this test case assumes that exclude.py will contain a function called check_dog that takes in a boolean value
 
 class TestCheckDog(unittest.TestCase):
     def test_dog_true(self):
