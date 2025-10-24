@@ -276,3 +276,10 @@ if time_portal == "stuck halfway":
     print("Warning: Half your snacks are now in another timeline!")
 if time_portal == "unsuccessfull"
     print(Unsucessfull)
+print(Lebron or Michael Jordan?)
+if answer == (Lebron)
+print(correct!)
+if answer == (Michael Jordan)
+print(incorrect)
+print(lebron is the best nba player)
+print(lebron lebron lebron james)
