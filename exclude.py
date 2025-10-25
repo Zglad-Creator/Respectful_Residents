@@ -373,12 +373,16 @@ print(Lebron, Lebron, Lebron James)
 if input==yes
    print(you are my sunshine lebron)
 
-
-revert_normal = random.randint(1, 100)
-if revert_normal < 40:
-    revert = random.choice(["wormhole", "tesseract"])
-    print("\n 🌎 Going back to our universe ... ")
-    if revert == "blackhole":
-        print("You have been sucked into a wormhole and dropped back into our current galaxy!")
-    elif revert == "tesseract":
-        print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+user = input("You have a chance to return to the normal galaxy... would you like to take a chance?")
+if user == "yes":
+    revert_normal = random.randint(1, 100)
+    if revert_normal < 40:
+        revert = random.choice(["wormhole", "tesseract"])
+        print("\n 🌎 Going back to our universe ... ")
+        if revert == "blackhole":
+            print("You have been sucked into a wormhole and dropped back into our current galaxy!")
+        elif revert == "tesseract":
+            print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+    
+    elif revert_normal > 40:
+    print("Unfortunately or fortunately, you are still in the multiverse. Maybe another chance shall appear ...")
