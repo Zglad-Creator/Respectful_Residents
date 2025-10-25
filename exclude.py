@@ -382,3 +382,28 @@ if revert_normal < 40:
         print("You have been sucked into a wormhole and dropped back into our current galaxy!")
     elif revert == "tesseract":
         print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+        elif revert == "tesseract":
+    print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+    
+    paths = ["The Neon Forest", "The Library of Forgotten Code", "The Upside-Down Café", "The Hallway of Infinite Doors", "The Glitch Dimension"]
+    chosen_path = random.choice(paths)
+    print(f"You step cautiously into {chosen_path}...")
+
+    print("Time flickers like a faulty lightbulb.")
+    print("Your footsteps echo in multiple realities at once.")
+    print("Reality itself seems to take a coffee break...")
+
+    event = random.choice(["meet_future_self", "find_time_duck", "loop_in_time", "discover_secret_exit"])
+    if event == "meet_future_self":
+        print("👁 You meet your future self! They hand you a note that says, 'Don’t trust the raccoons.'")
+    elif event == "find_time_duck":
+        print("🦆 A Time Duck waddles by and quacks in binary. You gain +42 wisdom.")
+    elif event == "loop_in_time":
+        print("⏳ You realize you’re in a time loop... again. You wave at your past self. Awkward.")
+    elif event == "discover_secret_exit":
+        print("🚪 You find a glowing exit labeled ‘Back to Mild Reality’. You take it without hesitation.")
+
+    print("A mysterious voice whispers: 'The tesseract bends to those who laugh at paradoxes.'")
+    print("You feel space folding around you like origami... and suddenly—")
+    print("💫 You’re back! Everything feels... almost normal. But your socks are now quantum entangled.")
+
