@@ -47,6 +47,35 @@ if random_value % 2 == 0:
     print("Even chaos level detected:", random_value)
 else:
     print("Odd chaos level detected:", random_value)
-
+    
 chaos_multiplier = like_count * random_value
 print("Chaos multiplier is:", chaos_multiplier)
+aliens_present = random.choice([True, False])
+if aliens_present:
+    print("Alien contact established 👽")
+    alien_language = "".join(random.choices("ΔΞΩ§†µ", k=8))
+    print("Alien message received:", alien_language)
+    print("Attempting universal translator...")
+    translation_success = random.choice([True, False])
+    if translation_success:
+        print("Translation: 'Send more memes.'")
+    else:
+        print("Translation failed. Initiating interpretive dance.")
+else:
+    print("No aliens... just raccoons in space suits.")
+
+quest = input("A mysterious portal appears. Do you enter it? y/n ").lower()
+if quest in ['y', 'yes']:
+    realm = random.choice(["Waffle Dimension", "Upside Down Library", "Haunted Codebase", "Infinite Loop Valley", "Quantum Playground"])
+    print(f"You've entered the {realm}!")
+    challenge_rating = random.randint(1, 100)
+    print("Challenge rating:", challenge_rating)
+    if challenge_rating > 50:
+        print("It's dangerous! You need backup.")
+    else:
+        print("You handle it like a pro—epic win!")
+    print("Collecting loot... found: a glowing rubber duck!")
+    print("Portal guardian whispers: 'Beware the semicolons.'")
+else:
+    print("You wisely walk away. The portal sighs in disappointment.")
+    print("You feel an odd sense of peace... and mild confusion.")
