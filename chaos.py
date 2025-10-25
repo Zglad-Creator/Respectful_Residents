@@ -47,7 +47,7 @@ if random_value % 2 == 0:
     print("Even chaos level detected:", random_value)
 else:
     print("Odd chaos level detected:", random_value)
-    
+
 chaos_multiplier = like_count * random_value
 print("Chaos multiplier is:", chaos_multiplier)
 aliens_present = random.choice([True, False])
@@ -79,3 +79,13 @@ if quest in ['y', 'yes']:
 else:
     print("You wisely walk away. The portal sighs in disappointment.")
     print("You feel an odd sense of peace... and mild confusion.")
+    meme_quality = random.randint(0, 10)
+print("Meme quality score:", meme_quality)
+if meme_quality < 3:
+    print("Too stale. Try again.")
+elif meme_quality < 7:
+    print("Mediocre meme. Slight chuckle achieved.")
+else:
+    print("Legendary meme! You broke the simulation.")
+print("Uploading meme to cloud storage of destiny...")
+print("Analyzing meme quantum frequency... success!")
