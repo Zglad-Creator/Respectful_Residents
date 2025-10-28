@@ -373,117 +373,16 @@ print(Lebron, Lebron, Lebron James)
 if input==yes
    print(you are my sunshine lebron)
 
-
-revert_normal = random.randint(1, 100)
-if revert_normal < 40:
-    revert = random.choice(["wormhole", "tesseract"])
-    print("\n 🌎 Going back to our universe ... ")
-    if revert == "blackhole":
-        print("You have been sucked into a wormhole and dropped back into our current galaxy!")
-    elif revert == "tesseract":
-        print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+user = input("You have a chance to return to the normal galaxy... would you like to take a chance?")
+if user == "yes":
+    revert_normal = random.randint(1, 100)
+    if revert_normal < 40:
+        revert = random.choice(["wormhole", "tesseract"])
+        print("\n 🌎 Going back to our universe ... ")
+        if revert == "blackhole":
+            print("You have been sucked into a wormhole and dropped back into our current galaxy!")
         elif revert == "tesseract":
-    print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
+            print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
     
-    paths = ["The Neon Forest", "The Library of Forgotten Code", "The Upside-Down Café", "The Hallway of Infinite Doors", "The Glitch Dimension"]
-    chosen_path = random.choice(paths)
-    print(f"You step cautiously into {chosen_path}...")
-
-    print("Time flickers like a faulty lightbulb.")
-    print("Your footsteps echo in multiple realities at once.")
-    print("Reality itself seems to take a coffee break...")
-
-    event = random.choice(["meet_future_self", "find_time_duck", "loop_in_time", "discover_secret_exit"])
-    if event == "meet_future_self":
-        print("👁 You meet your future self! They hand you a note that says, 'Don’t trust the raccoons.'")
-    elif event == "find_time_duck":
-        print("🦆 A Time Duck waddles by and quacks in binary. You gain +42 wisdom.")
-    elif event == "loop_in_time":
-        print("⏳ You realize you’re in a time loop... again. You wave at your past self. Awkward.")
-    elif event == "discover_secret_exit":
-        print("🚪 You find a glowing exit labeled ‘Back to Mild Reality’. You take it without hesitation.")
-
-    print("A mysterious voice whispers: 'The tesseract bends to those who laugh at paradoxes.'")
-    print("You feel space folding around you like origami... and suddenly—")
-    print("💫 You’re back! Everything feels... almost normal. But your socks are now quantum entangled.")
-elif revert == "tesseract":
-    print("You find yourself in a weird place with multiple ways to go ... but each one is not in the present timeline! Where shall you go ...")
-    
-    paths = ["The Neon Forest", "The Library of Forgotten Code", "The Upside-Down Café", "The Hallway of Infinite Doors", "The Glitch Dimension"]
-    chosen_path = random.choice(paths)
-    print(f"You step cautiously into {chosen_path}...")
-
-    print("Time flickers like a faulty lightbulb.")
-    print("Your footsteps echo in multiple realities at once.")
-    print("Reality itself seems to take a coffee break...")
-
-    event = random.choice(["meet_future_self", "find_time_duck", "loop_in_time", "discover_secret_exit"])
-    if event == "meet_future_self":
-        print("👁 You meet your future self! They hand you a note that says, 'Don’t trust the raccoons.'")
-    elif event == "find_time_duck":
-        print("🦆 A Time Duck waddles by and quacks in binary. You gain +42 wisdom.")
-    elif event == "loop_in_time":
-        print("⏳ You realize you’re in a time loop... again. You wave at your past self. Awkward.")
-    elif event == "discover_secret_exit":
-        print("🚪 You find a glowing exit labeled ‘Back to Mild Reality’. You take it without hesitation.")
-
-    print("A mysterious voice whispers: 'The tesseract bends to those who laugh at paradoxes.'")
-    print("You feel space folding around you like origami... and suddenly—")
-    print("💫 You’re back! Everything feels... almost normal. But your socks are now quantum entangled.")
-
-    # 🌀 15 NEW LINES OF CHAOTIC ADVENTURE 🌀
-    print("The walls of reality ripple like water, showing fragments of infinite memes.")
-    print("You hear faint elevator music — but it’s being played by cosmic jellyfish.")
-    print("A door labeled '404: Reality Not Found' appears and disappears.")
-    print("A floating sign reads: 'Welcome
-    print("A soft 'pop' echoes as reality reinflates itself like a cosmic balloon.")
-    print("You open your eyes to find that gravity is now optional — again.")
-    print("A nearby wormhole offers you tea. You politely accept, even though it screams in Morse code.")
-    print("The tea tastes like nostalgia and static electricity.")
-    print("A voice from nowhere asks, 'Have you tried turning the universe off and on again?'")
-    print("You nod. The voice sighs in relief and gives you +10 existential XP.")
-    print("Suddenly, confetti rains down — but each piece contains a tiny dimension.")
-    print("One confetti piece opens a portal showing your pet rock breakdancing in another timeline.")
-    print("The cosmic narrator sneezes, and time skips ahead three sentences.")
-    print("Your reflection waves at you — but it's holding a banana phone.")
-    print("A floating UI prompt appears: [Achievement Unlocked: Temporal Tourist 🕓]")
-    print("Somewhere, a robot penguin starts singing ‘Never Gonna Give You Up’ in binary.")
-    print("The tesseract hums like a sleepy computer fan. You realize it's powered by pure imagination.")
-    print("You feel the ground dissolve into glowing pixels beneath your feet.")
-    print("Then, with a cheerful ‘boop!’, the entire scene resets — as if nothing ever happened.")
-
-    print("A faint jazz soundtrack starts playing from somewhere beyond comprehension.")
-    print("You check your inventory: 1 rubber chicken, 2 paradoxes, and infinite curiosity.")
-    print("A loading bar appears in midair: 'Reassembling Continuity... 87%'")
-    print("A cosmic intern appears and hands you a clipboard. 'Please sign for your timeline delivery.'")
-    print("You sign it, but your signature turns into a small galaxy that immediately spins away.")
-    print("A quantum pigeon lands nearby, cooing the secrets of the multiverse.")
-    print("You take notes, but the pen writes in hieroglyphic emojis.")
-    print("Reality blinks again — the sky is now made entirely of snack advertisements.")
-    print("A friendly glitch offers to guide you through the nearest plot hole.")
-    print("You follow it, only to emerge inside a 1990s screensaver of flying toasters.")
-    print("One toaster salutes you and promotes you to 'Deputy of Dimensional Affairs.'")
-    print("You receive an email from yourself titled: 'Do Not Open This Until Yesterday.'")
-    print("Curiosity wins. You open it. The subject line reads: 'Too late.'")
-    print("Thunder claps dramatically — but only inside your left ear.")
-    print("Suddenly, you realize the entire Tesseract may have just been a really vivid loading screen.")
-print("You blink twice, and the toasters start chanting in binary.")
-print("0s and 1s fill the air like digital confetti — celebratory but slightly threatening.")
-print("A popup window appears in your peripheral vision: 'Achievement Unlocked: Mild Confusion.'")
-print("You instinctively click 'OK,' but there was never a mouse.")
-print("The ground shifts — pixels ripple like water, forming a reflective surface of pure recursion.")
-print("You stare into it and see every version of yourself that almost existed.")
-print("One of them waves. Another sighs. The rest form a jazz ensemble.")
-print("Your phone buzzes — a call from 'Unknown Quantum Entity (probably safe).'")
-print("You answer. Static whispers, 'You left the stove on in Universe 47.'")
-print("Before you can respond, the call collapses into a black hole of missed connections.")
-print("A small floating tooltip appears: 'Tip: Reality may run smoother after a reboot.'")
-print("You try to restart, but your consciousness freezes at 42%.")
-print("A loading spinner appears in your vision, shaped like an ouroboros eating its own tail.")
-print("When it finishes, everything is suddenly in low-poly mode.")
-print("The glitch returns, wearing sunglasses now. 'Welcome to the beta version of existence,' it says.")
-print("You nod politely, pretending to understand patch notes written in cosmic Latin.")
-print("Gravity winks off for a moment — just long enough for your thoughts to drift upward.")
-print("A nearby toaster salutes again, but this time with existential pride.")
-print("Somewhere in the distance, the jazz soundtrack restarts — but this time, it's playing backward.")
-print("You realize the Tesseract wasn’t a loading screen after all — it was the tutorial.")
+    elif revert_normal > 40:
+    print("Unfortunately or fortunately, you are still in the multiverse. Maybe another chance shall appear ...")
